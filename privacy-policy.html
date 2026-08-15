@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Dr. Chandrashekar P</title>
+    <meta name="description" content="Privacy Policy for Dr. Chandrashekar P's portfolio website. Learn how we handle patient data, booking requests, and ensure medical data privacy.">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Fonts (Aligned to Main IKOC Website) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#073d5b', // Deep brand blue
+                            slate: '#0068ae', // Royal brand blue
+                            light: '#1176b2', // Muted brand blue
+                        },
+                        teal: {
+                            DEFAULT: '#f2b301', // IKOC Gold
+                            deep: '#d9a000', // Deep Gold for hover
+                            soft: '#fff9e6', // Soft warm yellow background
+                        },
+                        sand: '#faf8f5', // Softer warm background
+                        mist: '#f4f7f9', // Soft brand blue tint background
+                        ink: '#1e2e39',
+                        muted: '#5e7180',
+                        line: '#d2dbe1',
+                    },
+                    fontFamily: {
+                        heading: ['Poppins', 'sans-serif'],
+                        body: ['Open Sans', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        card: '14px',
+                        btn: '999px',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-sand font-body text-ink antialiased leading-relaxed" x-data="{ mobileMenuOpen: false }">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-line text-navy shadow-sm">
+        <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="ikoc-logo-transparent.png" alt="IKOC Logo" class="h-8 md:h-10 object-contain">
+                <div class="flex flex-col border-l border-line pl-3">
+                    <span class="font-heading text-lg md:text-xl font-semibold tracking-wide text-navy">Dr. Chandrashekar P</span>
+                    <span class="text-[8px] md:text-[10px] text-navy/70 tracking-wider uppercase font-medium">Orthopaedic & Robotic Joint Replacement Surgeon</span>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold tracking-wide text-navy/95">
+                <a href="index.html#about" class="hover:text-teal transition-colors">About</a>
+                <a href="index.html#robotic" class="hover:text-teal transition-colors">Robotic Surgery</a>
+                <a href="index.html#expertise" class="hover:text-teal transition-colors">Expertise</a>
+                <a href="index.html#media" class="hover:text-teal transition-colors">Media</a>
+                <a href="index.html#contact" class="hover:text-teal transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden lg:block">
+                <a href="index.html#contact" class="bg-[#f2b301] hover:bg-[#d9a000] text-[#073d5b] px-6 py-2.5 rounded-btn text-sm font-bold tracking-wide shadow-md transition-all duration-200">
+                    Book an Appointment
+                </a>
+            </div>
+
+            <button class="lg:hidden text-navy hover:text-teal focus:outline-none" @click="mobileMenuOpen = !mobileMenuOpen" aria-label="Toggle Navigation Menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div x-show="mobileMenuOpen" 
+             x-transition:enter="transition ease-out duration-200" 
+             x-transition:enter-start="opacity-0 -translate-y-4" 
+             x-transition:enter-end="opacity-100 translate-y-0" 
+             class="lg:hidden bg-white border-b border-line px-6 py-6 absolute top-full left-0 w-full shadow-lg"
+             @click.away="mobileMenuOpen = false">
+            <nav class="flex flex-col space-y-4 text-sm font-semibold tracking-wide text-navy mb-6">
+                <a href="index.html#about" @click="mobileMenuOpen = false" class="hover:text-teal transition-colors py-1">About</a>
+                <a href="index.html#robotic" @click="mobileMenuOpen = false" class="hover:text-teal transition-colors py-1">Robotic Surgery</a>
+                <a href="index.html#expertise" @click="mobileMenuOpen = false" class="hover:text-teal transition-colors py-1">Expertise</a>
+                <a href="index.html#media" @click="mobileMenuOpen = false" class="hover:text-teal transition-colors py-1">Media</a>
+                <a href="index.html#contact" @click="mobileMenuOpen = false" class="hover:text-teal transition-colors py-1">Contact</a>
+            </nav>
+            <a href="index.html#contact" @click="mobileMenuOpen = false" class="block w-full text-center bg-[#f2b301] hover:bg-[#d9a000] text-[#073d5b] py-3 rounded-btn text-sm font-bold tracking-wide shadow-md transition-all">
+                Book an Appointment
+            </a>
+        </div>
+    </header>
+
+    <main class="py-16 md:py-24 bg-white">
+        <div class="max-w-[800px] mx-auto px-6 space-y-8">
+            <div class="space-y-4 border-b border-line pb-6">
+                <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl text-navy font-semibold">Privacy Policy</h1>
+                <p class="text-sm text-muted">
+                    <strong>Last Updated:</strong> <span id="dynamic-date" class="font-semibold text-navy"></span>
+                </p>
+            </div>
+
+            <section class="space-y-4">
+                <p class="text-navy/90 text-base md:text-lg font-light leading-relaxed">
+                    This Privacy Policy describes how the clinical practice of Dr. Chandrashekar P collects, uses, and protects patient and visitor information gathered through this portfolio website. We are committed to maintaining the confidentiality of your personal and medical information in accordance with Indian healthcare regulations and ethical guidelines.
+                </p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="font-heading text-xl md:text-2xl text-navy font-semibold">1. Information We Collect</h2>
+                <p class="text-navy/80 text-sm md:text-base font-light">
+                    When you use our website to explore treatments or schedule appointments, we may collect the following information:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-navy/80 text-sm md:text-base font-light">
+                    <li><strong>Contact Details:</strong> Your name, phone number, and email address provided during appointment bookings.</li>
+                    <li><strong>Medical Context:</strong> Any preliminary queries regarding joint pain, robotic surgery, or medical history you submit voluntarily via appointment forms or WhatsApp consultation desks.</li>
+                    <li><strong>Usage Data:</strong> Anonymized analytical data (cookies, IP addresses, browser types) gathered to optimize page loading speeds and overall website performance.</li>
+                </ul>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="font-heading text-xl md:text-2xl text-navy font-semibold">2. How We Use Your Information</h2>
+                <p class="text-navy/80 text-sm md:text-base font-light">
+                    We use the collected information strictly for clinical coordination and patient support:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-navy/80 text-sm md:text-base font-light">
+                    <li>To schedule and manage consultations at the International Knee & Orthopaedic Centre (IKOC).</li>
+                    <li>To respond to your inquiries regarding robotic knee replacement procedures or sports injuries.</li>
+                    <li>To verify patient credentials for appointment booking platforms (such as Practo).</li>
+                </ul>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="font-heading text-xl md:text-2xl text-navy font-semibold">3. Third-Party Integration and Booking</h2>
+                <p class="text-navy/80 text-sm md:text-base font-light">
+                    Our website links directly to external appointment platforms (Practo) and clinical communication desks (WhatsApp). Any information you enter on these third-party platforms is governed by their respective privacy policies. We recommend reviewing their terms when booking.
+                </p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="font-heading text-xl md:text-2xl text-navy font-semibold">4. Data Security & Medical Privacy</h2>
+                <p class="text-navy/80 text-sm md:text-base font-light">
+                    Your personal information and clinical queries are strictly confidential. We do not sell, trade, or share your data with external marketing agencies. Patient records, surgical details, and consultation notes are stored in secure clinical systems at IKOC in compliance with patient-confidentiality laws.
+                </p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="font-heading text-xl md:text-2xl text-navy font-semibold">5. Consent & Disclaimers</h2>
+                <p class="text-navy/80 text-sm md:text-base font-light">
+                    By submitting information through this site, you consent to our team contacting you via call, WhatsApp, or email to coordinate your appointment. Under NMC guidelines, this site is purely for educational awareness; no digital communication constitutes a formal surgical diagnosis until a physical clinical evaluation is conducted.
+                </p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="font-heading text-xl md:text-2xl text-navy font-semibold">6. Contact Information</h2>
+                <p class="text-navy/80 text-sm md:text-base font-light">
+                    If you have any questions regarding this Privacy Policy or wish to request data deletion, you may reach out to the coordinator desk at:
+                </p>
+                <p class="text-sm font-semibold text-navy bg-sand p-4 rounded-lg">
+                    International Knee & Orthopaedic Centre (IKOC)<br>
+                    L-166, Sector 6, HSR Layout, Bengaluru<br>
+                    Email: contact@drchandrashekarp.com | Phone: +91 80 4926 1111
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy py-16 text-white border-t border-navy-slate/30">
+        <div class="max-w-[1200px] mx-auto px-6 space-y-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-6 space-y-4">
+                    <div class="inline-flex items-center bg-white px-3 py-1.5 rounded-lg mb-2">
+                        <img src="ikoc-logo-transparent.png" alt="IKOC Logo" class="h-8 object-contain">
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold text-white">Dr. Chandrashekar P</h3>
+                    <p class="text-xs text-sand/80 max-w-sm font-light">
+                        MBBS, MS (Orthopaedics), FIJS · Karnataka Medical Council Reg. No. 66588
+                    </p>
+                </div>
+                
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-teal text-sm font-semibold tracking-wider uppercase">Quick Links</h4>
+                    <ul class="space-y-2 text-xs text-sand/70 font-light">
+                        <li><a href="index.html#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="index.html#robotic" class="hover:text-white transition-colors">Robotic Surgery</a></li>
+                        <li><a href="index.html#expertise" class="hover:text-white transition-colors">Expertise</a></li>
+                        <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-teal text-sm font-semibold tracking-wider uppercase">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.youtube.com/@IKOCDiaries-DrChandrashekarP" target="_blank" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-teal hover:border-teal transition-colors" aria-label="YouTube Channel">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 text-white" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dr-chandrashekar-p-ortho" target="_blank" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-teal hover:border-teal transition-colors" aria-label="LinkedIn Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 text-white" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.145 2.4 3.854c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-navy-slate/30 pt-8 text-[11px] text-sand/60 font-light space-y-4">
+                <p>
+                    &copy; 2026 Dr. Chandrashekar P Portfolio. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+
+        // Dynamic date injection script
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('dynamic-date').textContent = new Date().toLocaleDateString('en-US', options);
+    </script>
+</body>
+</html>

@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Chandrashekar P | Robotic Knee & Joint Replacement Surgeon, Bangalore</title>
+    <meta name="description" content="Dr. Chandrashekar P is a Bengaluru-based orthopaedic surgeon specialising in robotic and computer-assisted knee replacement, joint replacement and sports-injury surgery. Founder of IKOC. Book a consultation.">
+    <meta name="keywords" content="robotic knee replacement surgeon Bangalore, knee replacement surgeon Bangalore, joint replacement surgeon Bengaluru, computer-assisted knee replacement, meniscus surgery Bangalore, ACL reconstruction Bangalore, partial knee replacement">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dr. Chandrashekar P | Robotic Knee & Joint Replacement Surgeon, Bangalore">
+    <meta property="og:description" content="Robotic & computer-assisted knee replacement surgeon in Bangalore. Dr. Chandrashekar P specialises in joint replacement, meniscus & sports-injury surgery.">
+    <meta property="og:image" content="doctor_portrait.jpg">
+
+    <!-- Fonts (Aligned to Main IKOC Website) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#073d5b', // Deep brand blue
+                            slate: '#0068ae', // Royal brand blue
+                            light: '#1176b2', // Muted brand blue
+                        },
+                        teal: {
+                            DEFAULT: '#f2b301', // IKOC Gold
+                            deep: '#d9a000', // Deep Gold for hover
+                            soft: '#fff9e6', // Soft warm yellow background
+                        },
+                        sand: '#faf8f5', // Softer warm background matching gold theme
+                        mist: '#f4f7f9', // Soft brand blue tint background
+                        ink: '#1e2e39',
+                        muted: '#5e7180',
+                        line: '#d2dbe1',
+                    },
+                    fontFamily: {
+                        heading: ['Poppins', 'sans-serif'],
+                        body: ['Open Sans', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        card: '14px',
+                        btn: '999px',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .scroll-fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, opacity;
+        }
+        .scroll-fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .scroll-scale-in {
+            opacity: 0;
+            transform: scale(0.96);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, opacity;
+        }
+        .scroll-scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+    </style>
+
+    <!-- Alpine.js Plugins -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <!-- Alpine.js Core -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Structured Data (Physician Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dr. Chandrashekar P",
+      "medicalSpecialty": "Orthopedic",
+      "description": "Robotic and computer-assisted knee & joint replacement surgeon in Bangalore.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "KA",
+        "addressCountry": "IN"
+      },
+      "url": "https://drchandrashekarp.com",
+      "telephone": "+918049261111",
+      "sameAs": [
+        "https://www.practo.com/bangalore/doctor/dr-chandrashekar-orthopedist",
+        "https://www.linkedin.com/in/dr-chandrashekar-p-ortho",
+        "https://www.youtube.com/@ikoc"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data (FAQ Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is Dr. Chandrashekar P?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. Chandrashekar P is a Bengaluru-based orthopaedic surgeon specialising in robotic and computer-assisted knee and joint replacement. He is the Founder of IKOC and Head of Orthopaedics at Sakra World Hospital."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is robotic knee replacement different from conventional surgery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It adds detailed pre-surgical planning and real-time guidance during the operation, which can improve the accuracy of implant positioning. Whether it suits you depends on your anatomy and overall health, decided after assessment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is robotic knee replacement available in Bangalore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dr. Chandrashekar P performs robotic and computer-assisted knee replacement in Bangalore at IKOC (HSR Layout) and Sakra World Hospital (Bellandur)."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-sand font-body text-ink antialiased leading-relaxed" x-data="{ mobileMenuOpen: false }">
+
+    <!-- 1. Header / Navigation -->
+    <header class="sticky top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-line text-navy shadow-sm" 
+            x-data="{ scrolled: false }" 
+            @scroll.window="scrolled = (window.pageYOffset > 50)">
+        <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <img src="ikoc-logo-transparent.png" alt="IKOC Logo" class="h-8 md:h-10 object-contain">
+                <div class="flex flex-col border-l border-line pl-3">
+                    <span class="font-heading text-lg md:text-xl font-semibold tracking-wide text-navy">Dr. Chandrashekar P</span>
+                    <span class="text-[8px] md:text-[10px] text-navy/70 tracking-wider uppercase font-medium">Orthopaedic & Robotic Joint Replacement Surgeon</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold tracking-wide text-navy/95">
+                <a href="#about" class="hover:text-teal transition-colors">About</a>
+                <a href="#robotic" class="hover:text-teal transition-colors">Robotic Surgery</a>
+                <a href="#expertise" class="hover:text-teal transition-colors">Expertise</a>
+                <a href="#media" class="hover:text-teal transition-colors">Media</a>
+                <a href="#contact" class="hover:text-teal transition-colors">Contact</a>
+            </nav>
+ 
+            <!-- CTA Button -->
+            <div class="hidden lg:block">
+                <a href="#contact" class="bg-[#f2b301] hover:bg-[#d9a000] text-[#073d5b] px-6 py-2.5 rounded-btn text-sm font-bold tracking-wide shadow-md transition-all duration-200">
+                    Book an Appointment
+                </a>
+            </div>
+ 
+            <!-- Hamburger Button -->
+            <button class="lg:hidden text-navy hover:text-teal focus:outline-none" @click="mobileMenuOpen = !mobileMenuOpen" aria-label="Toggle Navigation Menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+ 
+        <!-- Mobile Navigation Drawer -->
+        <div x-show="mobileMenuOpen" 
+             x-transition:enter="transition ease-out duration-200" 
+             x-transition:enter-start="opacity-0 -translate-y-4" 
+             x-transition:enter-end="opacity-100 translate-y-0" 
+             x-transition:leave="transition ease-in duration-150" 
+             x-transition:leave-start="opacity-100 translate-y-0" 
+             x-transition:leave-end="opacity-0 -translate-y-4"
+             class="lg:hidden bg-white border-b border-line px-6 py-6 absolute top-full left-0 w-full shadow-lg"
+             @click.away="mobileMenuOpen = false">
+            <nav class="flex flex-col space-y-4 text-sm font-semibold tracking-wide text-navy mb-6">
+                <a href="#about" @click="mobileMenuOpen = false" class="hover:text-teal transition-colors py-1">About</a>
+                <a href="#robotic" @click="mobileMenuOpen = false" class="hover:text-teal transition-colors py-1">Robotic Surgery</a>
+                <a href="#expertise" @click="mobileMenuOpen = false" class="hover:text-teal transition-colors py-1">Expertise</a>
+                <a href="#media" @click="mobileMenuOpen = false" class="hover:text-teal transition-colors py-1">Media</a>
+                <a href="#contact" @click="mobileMenuOpen = false" class="hover:text-teal transition-colors py-1">Contact</a>
+            </nav>
+            <a href="#contact" @click="mobileMenuOpen = false" class="block w-full text-center bg-[#f2b301] hover:bg-[#d9a000] text-[#073d5b] py-3 rounded-btn text-sm font-bold tracking-wide shadow-md transition-all">
+                Book an Appointment
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <section class="relative pt-12 pb-20 md:py-28 overflow-hidden bg-gradient-to-b from-sand to-white" x-data="{ animate: false }" x-init="setTimeout(() => animate = true, 50)">
+            <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                <!-- Text Left -->
+                <div class="lg:col-span-7 space-y-6 text-left scroll-fade-up" :class="{ 'visible': animate }">
+                    <div class="inline-flex items-center space-x-2 bg-teal/10 border border-teal/20 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-teal-deep uppercase">
+                        <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+                        <span>Robotic Joint Replacement Pioneer</span>
+                    </div>
+                    
+                    <h1 class="font-heading text-navy font-semibold leading-tight space-y-2">
+                        <span class="block text-4xl md:text-5xl lg:text-6xl tracking-tight">Dr. Chandrashekar P</span>
+                        <span class="block text-xl md:text-2xl lg:text-3xl text-navy-slate font-medium tracking-wide">
+                            Robotic Knee & Joint Replacement Surgeon
+                        </span>
+                    </h1>
+                    
+                    <p class="text-navy/85 text-lg md:text-xl font-body max-w-2xl font-light leading-relaxed">
+                        A pioneer of robotic and computer-assisted knee replacement in India, and co-creator of <strong>MISSO, India's first indigenous joint-replacement robot</strong>. Founder of the International Knee & Orthopaedic Centre (IKOC), Bengaluru.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+                        <a href="#contact" class="bg-teal hover:bg-teal-deep text-white text-center px-8 py-4 rounded-btn font-semibold tracking-wide shadow-lg hover:shadow-xl transition-all duration-200">
+                            Book an Appointment
+                        </a>
+                        <a href="#robotic" class="border border-teal hover:bg-teal/5 text-teal-deep text-center px-8 py-4 rounded-btn font-semibold tracking-wide transition-all duration-200">
+                            Explore Robotic Knee Replacement
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portrait Right -->
+                <div class="lg:col-span-5 flex justify-center relative scroll-scale-in delay-200" :class="{ 'visible': animate }">
+                    <div class="relative w-full max-w-[500px] aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl border-4 border-white bg-slate-200">
+                        <img src="doctor_portrait.jpg" alt="Dr. Chandrashekar P, robotic knee replacement surgeon in Bangalore" class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Trust Strip -->
+        <section class="bg-navy py-6 text-white border-t border-navy-slate/30">
+            <div class="max-w-[1200px] mx-auto px-6 flex flex-wrap items-center justify-between gap-6">
+                <div class="flex flex-wrap items-center gap-3 text-xs md:text-sm text-sand/90 font-medium tracking-wide">
+                    <span class="bg-white/10 px-3 py-1.5 rounded-md border border-white/5">MBBS, MS (Orthopaedics), FIJS</span>
+                    <span class="bg-white/10 px-3 py-1.5 rounded-md border border-white/5">KMC Reg. 66588</span>
+                    <span class="bg-white/10 px-3 py-1.5 rounded-md border border-white/5 flex items-center gap-1.5">
+                        <img src="ikoc-logo-transparent.png" alt="IKOC Logo" class="h-4 object-contain brightness-0 invert">
+                        <span>Founder, IKOC</span>
+                    </span>
+                    <span class="bg-white/10 px-3 py-1.5 rounded-md border border-white/5">HOD Orthopaedics, Sakra World Hospital</span>
+                </div>
+                <div class="text-sm font-semibold tracking-wide text-teal">
+                    Over 50,000+ orthopaedic surgeries performed
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Experience in Numbers -->
+        <section class="bg-navy py-16 text-white border-y border-navy-slate/30">
+            <div class="max-w-[1200px] mx-auto px-6 space-y-10">
+                <div class="text-center space-y-2">
+                    <h2 class="font-heading text-2xl md:text-3xl text-sand font-semibold tracking-wide">Experience that Speaks</h2>
+                    <p class="text-teal text-xs md:text-sm tracking-wider uppercase font-semibold">Verifiable clinical track record</p>
+                </div>
+                
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center" x-data="{
+                    surgeries: 50000,
+                    replacements: 10000,
+                    robotic: 3000,
+                    meniscus: 10000,
+                    animateCounters() {
+                        const targetSurgeries = 50000;
+                        const targetReplacements = 10000;
+                        const targetRobotic = 3000;
+                        const targetMeniscus = 10000;
+                        
+                        this.surgeries = 0;
+                        this.replacements = 0;
+                        this.robotic = 0;
+                        this.meniscus = 0;
+                        
+                        const duration = 1500;
+                        const steps = 60;
+                        const stepTime = duration / steps;
+                        
+                        let currentStep = 0;
+                        const timer = setInterval(() => {
+                            currentStep++;
+                            this.surgeries = Math.floor((targetSurgeries / steps) * currentStep);
+                            this.replacements = Math.floor((targetReplacements / steps) * currentStep);
+                            this.robotic = Math.floor((targetRobotic / steps) * currentStep);
+                            this.meniscus = Math.floor((targetMeniscus / steps) * currentStep);
+                            
+                            if (currentStep >= steps) {
+                                this.surgeries = targetSurgeries;
+                                this.replacements = targetReplacements;
+                                this.robotic = targetRobotic;
+                                this.meniscus = targetMeniscus;
+                                clearInterval(timer);
+                            }
+                        }, stepTime);
+                    }
+                }" x-intersect.once="animateCounters()">
+                    <div class="space-y-2">
+                        <div class="font-heading text-3xl md:text-5xl font-semibold text-teal" x-text="surgeries.toLocaleString() + '+'">50,000+</div>
+                        <div class="text-xs md:text-sm text-sand/80 font-light">Orthopaedic Surgeries</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="font-heading text-3xl md:text-5xl font-semibold text-teal" x-text="replacements.toLocaleString() + '+'">10,000+</div>
+                        <div class="text-xs md:text-sm text-sand/80 font-light">Joint Replacements</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="font-heading text-3xl md:text-5xl font-semibold text-teal" x-text="robotic.toLocaleString() + '+'">3,000+</div>
+                        <div class="text-xs md:text-sm text-sand/80 font-light">Robotic Knee Replacements</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="font-heading text-3xl md:text-5xl font-semibold text-teal" x-text="meniscus.toLocaleString() + '+'">10,000+</div>
+                        <div class="text-xs md:text-sm text-sand/80 font-light">Meniscus Repairs</div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <p class="text-[10px] text-sand/65 font-light">*Figures reflect cumulative surgical experience to date.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 4. About Section -->
+        <section id="about" class="py-20 md:py-28 bg-white border-b border-line" x-data="{ shown: false }" x-intersect.once="shown = true">
+            <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                <!-- Left Image/Decoration -->
+                <div class="lg:col-span-5 space-y-6 scroll-fade-up" :class="{ 'visible': shown }">
+                    <div class="relative rounded-card overflow-hidden shadow-xl aspect-[3/4] bg-slate-100">
+                        <img src="doctor_about.jpg" alt="Orthopaedic surgeon Dr. Chandrashekar P at IKOC, Bengaluru" class="w-full h-full object-cover">
+                    </div>
+                    <div class="border-l-4 border-teal pl-4 italic text-navy/85 font-heading text-lg md:text-xl leading-relaxed py-2">
+                        “Advanced technology matters, but so does treating every patient like family.”
+                    </div>
+                </div>
+                
+                <!-- Right Text -->
+                <div class="lg:col-span-7 space-y-6 scroll-fade-up delay-200" :class="{ 'visible': shown }">
+                    <h2 class="font-heading text-3xl md:text-4xl text-navy font-semibold tracking-wide">
+                        About Dr. Chandrashekar P
+                    </h2>
+                    
+                    <div class="space-y-5 text-navy/90 text-base md:text-lg leading-relaxed font-light">
+                        <p>
+                            Dr. Chandrashekar P is a Bengaluru-based orthopaedic surgeon who has dedicated his career to the knee and to joint replacement, with a special focus on robotic and computer-assisted techniques. He is the Founder of the International Knee & Orthopaedic Centre (IKOC) and Head of Orthopaedics at Sakra World Hospital.
+                        </p>
+                        <p>
+                            Over more than 15 years of practice, he has helped thousands of patients move again, from robotic total knee replacement and partial (unicondylar) knee replacement to meniscus repair, ligament reconstruction and cartilage preservation for younger patients. 
+                        </p>
+                        <p>
+                            He was an early adopter of robotic joint replacement in India and co-created <strong>MISSO</strong>, positioned as the country’s first fully indigenous knee-replacement robot, with the aim of making precise, technology-assisted surgery more affordable and available beyond the big metros.
+                        </p>
+                        <p>
+                            Alongside surgery, he trains orthopaedic surgeons from India and abroad, lectures at national and international conferences, and publishes on robotic surgery, custom-fit implants and arthroscopy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Areas of Expertise -->
+        <section id="expertise" class="py-20 md:py-28 bg-sand border-b border-line" x-data="{ shown: false }" x-intersect.once="shown = true">
+            <div class="max-w-[1200px] mx-auto px-6 space-y-12">
+                <div class="text-center max-w-2xl mx-auto space-y-3 scroll-fade-up" :class="{ 'visible': shown }">
+                    <h2 class="font-heading text-3xl md:text-4xl text-navy font-semibold tracking-wide">Areas of Clinical Expertise</h2>
+                    <p class="text-muted font-light">Specialised orthopaedic care built on years of advanced surgical precision.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 scroll-fade-up delay-200" :class="{ 'visible': shown }">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-card border border-line shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 space-y-4">
+                        <div class="w-12 h-12 rounded-full bg-teal/10 flex items-center justify-center text-teal">
+                            <i data-lucide="cpu" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-heading text-xl text-navy font-semibold">Robotic Knee Replacement</h3>
+                        <p class="text-navy/80 text-sm font-light">Total and partial knee replacement guided by active robotic and computer-navigation systems for precise implant alignment.</p>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-card border border-line shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 space-y-4">
+                        <div class="w-12 h-12 rounded-full bg-teal/10 flex items-center justify-center text-teal">
+                            <i data-lucide="activity" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-heading text-xl text-navy font-semibold">Joint Replacement</h3>
+                        <p class="text-navy/80 text-sm font-light">Knee, hip and shoulder replacement, including complex primary and revision surgery for failed replacements.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-card border border-line shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 space-y-4">
+                        <div class="w-12 h-12 rounded-full bg-teal/10 flex items-center justify-center text-teal">
+                            <i data-lucide="activity-square" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-heading text-xl text-navy font-semibold">Sports Medicine & Arthroscopy</h3>
+                        <p class="text-navy/80 text-sm font-light">Keyhole surgery for ligament (ACL/PCL) reconstruction, cartilage repair and shoulder instability.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white p-8 rounded-card border border-line shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 space-y-4">
+                        <div class="w-12 h-12 rounded-full bg-teal/10 flex items-center justify-center text-teal">
+                            <i data-lucide="layers" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-heading text-xl text-navy font-semibold">Meniscus Repair & Transplant</h3>
+                        <p class="text-navy/80 text-sm font-light">All-inside meniscal repair and meniscal transplantation to protect the natural joint.</p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bg-white p-8 rounded-card border border-line shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 space-y-4">
+                        <div class="w-12 h-12 rounded-full bg-teal/10 flex items-center justify-center text-teal">
+                            <i data-lucide="sparkles" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-heading text-xl text-navy font-semibold">Knee Resurfacing</h3>
+                        <p class="text-navy/80 text-sm font-light">Joint-preserving options for early and moderate arthritis, delaying or avoiding a full replacement for younger patients.</p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="bg-white p-8 rounded-card border border-line shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 space-y-4">
+                        <div class="w-12 h-12 rounded-full bg-teal/10 flex items-center justify-center text-teal">
+                            <i data-lucide="git-branch" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-heading text-xl text-navy font-semibold">Cartilage & Ligament Restoration</h3>
+                        <p class="text-navy/80 text-sm font-light">Neo-ligament reconstruction and cartilage restoration techniques for knee stability and longevity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Robotic & Computer-Assisted Joint Replacement -->
+        <section id="robotic" class="py-20 md:py-28 bg-white border-b border-line" x-data="{ shown: false }" x-intersect.once="shown = true">
+            <div class="max-w-[1200px] mx-auto px-6 space-y-16">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                <!-- Text Left -->
+                <div class="lg:col-span-7 space-y-6 scroll-fade-up" :class="{ 'visible': shown }">
+                    <h2 class="font-heading text-3xl md:text-4xl text-navy font-semibold tracking-wide">
+                        Precision You Can Plan For
+                    </h2>
+                    
+                    <p class="text-navy/90 text-base md:text-lg leading-relaxed font-light">
+                        Traditional knee replacement relies heavily on the surgeon’s manual judgement in theatre. Robotic and computer-assisted surgery adds a layer of measurement and planning, the joint is mapped in detail, the surgical plan is rehearsed digitally, and implant positioning is guided in real time during the procedure.
+                    </p>
+                    
+                    <div class="bg-teal/5 border border-teal/15 p-6 rounded-card space-y-4">
+                        <h4 class="font-heading text-lg text-teal-deep font-semibold">India's First AI-Powered Total Knee Replacement</h4>
+                        <p class="text-navy/80 text-sm leading-relaxed font-light">
+                            In January 2026, Dr. Chandrashekar P led India’s first AI-powered total knee replacement surgery using an imageless, real-time guidance system.
+                        </p>
+                    </div>
+
+                    <h4 class="font-heading text-lg text-navy font-semibold pt-2">What this can mean for patients:</h4>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="check" class="text-teal w-5 h-5 shrink-0 mt-0.5"></i>
+                            <span class="text-navy/85 text-sm font-light">More accurate implant alignment and sizing</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="check" class="text-teal w-5 h-5 shrink-0 mt-0.5"></i>
+                            <span class="text-navy/85 text-sm font-light">Surgical plan tailored to unique anatomy</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="check" class="text-teal w-5 h-5 shrink-0 mt-0.5"></i>
+                            <span class="text-navy/85 text-sm font-light">Minimally invasive, tissue-sparing approach</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="check" class="text-teal w-5 h-5 shrink-0 mt-0.5"></i>
+                            <span class="text-navy/85 text-sm font-light">A focus on faster, comfortable recovery</span>
+                        </li>
+                    </ul>
+
+                    <p class="text-xs text-muted leading-relaxed font-light">
+                        *Suitability for robotic surgery is decided after a full clinical assessment. Individual outcomes vary.
+                    </p>
+
+                    <div class="pt-4">
+                        <a href="#contact" class="bg-teal hover:bg-teal-deep text-white px-8 py-3.5 rounded-btn font-semibold text-sm tracking-wide shadow-md transition-all inline-block">
+                            Ask if robotic surgery is right for you
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Graphic/Illustration Right -->
+                <div class="lg:col-span-5 scroll-scale-in delay-200" :class="{ 'visible': shown }">
+                    <div class="relative rounded-card overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/3]">
+                        <img src="robotic_surgery.jpg" alt="Active robotic knee replacement surgical arm and 3D planning screen showing joint mapping in theatre" class="w-full h-full object-cover object-center">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intellijoint Smart Navigation Block -->
+            <div class="border-t border-line pt-16 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                <!-- Image Left -->
+                <div class="lg:col-span-5 scroll-scale-in" :class="{ 'visible': shown }">
+                    <div class="relative rounded-card overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/3]">
+                        <img src="intellijoint.jpg" alt="Dr. Chandrashekar P demonstrating the Intellijoint KNEE & HIP smart navigation system" class="w-full h-full object-cover object-center">
+                    </div>
+                </div>
+
+                <!-- Text Right -->
+                <div class="lg:col-span-7 space-y-6 text-left scroll-fade-up delay-200" :class="{ 'visible': shown }">
+                    <div class="inline-flex items-center space-x-2 bg-teal/10 border border-teal/20 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-teal-deep uppercase">
+                        <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                        <span>Smart Sensor Technology</span>
+                    </div>
+                    
+                    <h3 class="font-heading text-2xl md:text-3xl text-navy font-semibold tracking-wide">
+                        Intellijoint KNEE & HIP Smart Navigation
+                    </h3>
+                    
+                    <p class="text-navy/90 text-base leading-relaxed font-light">
+                        In addition to active robotic-arm assistance, Dr. Chandrashekar P utilizes the **Intellijoint** surgical navigation system. Unlike large, traditional navigation towers, Intellijoint is a compact, smart-sensor tracking system that sits directly within the sterile field, providing the surgeon with real-time digital measurements of leg length, offset, and implant alignment.
+                    </p>
+
+                    <h4 class="font-heading text-lg text-navy font-semibold pt-2">Clinical benefits of Intellijoint smart navigation:</h4>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="check" class="text-teal w-5 h-5 shrink-0 mt-0.5"></i>
+                            <span class="text-navy/85 text-sm font-light"><strong>Real-Time Data:</strong> Millimeter and degree precision for implant positioning.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="check" class="text-teal w-5 h-5 shrink-0 mt-0.5"></i>
+                            <span class="text-navy/85 text-sm font-light"><strong>Imageless Navigation:</strong> Eliminates the need for pre-operative CT scans and excessive radiation.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="check" class="text-teal w-5 h-5 shrink-0 mt-0.5"></i>
+                            <span class="text-navy/85 text-sm font-light"><strong>Hip & Knee Precision:</strong> Promotes accurate leg length restoration and alignment.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="check" class="text-teal w-5 h-5 shrink-0 mt-0.5"></i>
+                            <span class="text-navy/85 text-sm font-light"><strong>Tissue-Friendly:</strong> Fits seamlessly into standard surgical workflows.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            </div> <!-- Closes the max-w-[1200px] container -->
+        </section>
+
+        <!-- 7. Innovations & Milestones -->
+        <section class="py-20 md:py-28 bg-sand border-b border-line">
+            <div class="max-w-[1200px] mx-auto px-6 space-y-12">
+                <div class="text-center max-w-2xl mx-auto space-y-3">
+                    <h2 class="font-heading text-3xl md:text-4xl text-navy font-semibold tracking-wide">Innovations & Milestones</h2>
+                    <p class="text-muted font-light">A timeline of clinical contributions and pioneering achievements.</p>
+                </div>
+
+                <div class="relative max-w-4xl mx-auto border-l-2 border-line pl-6 md:pl-8 space-y-12">
+                    <!-- Milestone 1 -->
+                    <div class="relative scroll-fade-up" x-data="{ shown: false }" x-intersect.once="shown = true" :class="{ 'visible': shown }">
+                        <div class="absolute -left-[35px] md:-left-[43px] top-1.5 w-6 h-6 rounded-full bg-teal border-4 border-sand flex items-center justify-center"></div>
+                        <div class="space-y-2">
+                            <span class="text-xs font-semibold text-teal-deep bg-teal/10 px-2.5 py-1 rounded">Innovation Co-Creator</span>
+                            <h3 class="font-heading text-xl text-navy font-semibold pt-1">Co-creator of MISSO</h3>
+                            <p class="text-navy/80 font-light text-sm md:text-base">
+                                Played a key role in designing MISSO, reported in the press as India’s first indigenous robotics system for joint replacement, aimed at making robotic surgery affordable and accessible.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2 -->
+                    <div class="relative scroll-fade-up" x-data="{ shown: false }" x-intersect.once="shown = true" :class="{ 'visible': shown }">
+                        <div class="absolute -left-[35px] md:-left-[43px] top-1.5 w-6 h-6 rounded-full bg-teal border-4 border-sand flex items-center justify-center"></div>
+                        <div class="space-y-2">
+                            <span class="text-xs font-semibold text-teal-deep bg-teal/10 px-2.5 py-1 rounded">2026 Milestone</span>
+                            <h3 class="font-heading text-xl text-navy font-semibold pt-1">India’s first AI-powered TKR</h3>
+                            <p class="text-navy/80 font-light text-sm md:text-base">
+                                Performed India’s first AI-guided, imageless total knee replacement using an active real-time navigation system.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 3 -->
+                    <div class="relative scroll-fade-up" x-data="{ shown: false }" x-intersect.once="shown = true" :class="{ 'visible': shown }">
+                        <div class="absolute -left-[35px] md:-left-[43px] top-1.5 w-6 h-6 rounded-full bg-teal border-4 border-sand flex items-center justify-center"></div>
+                        <div class="space-y-2">
+                            <span class="text-xs font-semibold text-teal-deep bg-teal/10 px-2.5 py-1 rounded">Clinical Leadership</span>
+                            <h3 class="font-heading text-xl text-navy font-semibold pt-1">Active-robotics pioneer</h3>
+                            <p class="text-navy/80 font-light text-sm md:text-base">
+                                An early adopter of active robotic knee replacement in India and serves as a global advisor for the CUVIS active-robotic platform.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 4 -->
+                    <div class="relative scroll-fade-up" x-data="{ shown: false }" x-intersect.once="shown = true" :class="{ 'visible': shown }">
+                        <div class="absolute -left-[35px] md:-left-[43px] top-1.5 w-6 h-6 rounded-full bg-teal border-4 border-sand flex items-center justify-center"></div>
+                        <div class="space-y-2">
+                            <span class="text-xs font-semibold text-teal-deep bg-teal/10 px-2.5 py-1 rounded">Technique Innovation</span>
+                            <h3 class="font-heading text-xl text-navy font-semibold pt-1">Direct Lateral Portal Portal Description</h3>
+                            <p class="text-navy/80 font-light text-sm md:text-base">
+                                Credited with describing a new knee arthroscopy portal (the Direct Lateral Portal) to improve visualization and reach during keyhole procedures.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 9. Education, Training & Positions -->
+        <section class="py-20 md:py-28 bg-white border-b border-line">
+            <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+                <!-- Left: Current Positions -->
+                <div class="lg:col-span-6 space-y-6">
+                    <h2 class="font-heading text-2xl md:text-3xl text-navy font-semibold">Current Roles & Registration</h2>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <i data-lucide="briefcase" class="text-teal w-5 h-5 shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-navy">Founder & Chairman</h4>
+                                <p class="text-navy/80 text-sm font-light">International Knee & Orthopaedic Centre (IKOC), Bengaluru</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="briefcase" class="text-teal w-5 h-5 shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-navy">Director, Senior Consultant & HOD</h4>
+                                <p class="text-navy/80 text-sm font-light">Head of Department of Orthopaedics, Sakra World Hospital, Bengaluru</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="file-text" class="text-teal w-5 h-5 shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-navy">Medical Registration</h4>
+                                <p class="text-navy/80 text-sm font-light">Karnataka Medical Council Registration No. 66588</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right: Education & Training -->
+                <div class="lg:col-span-6 space-y-6">
+                    <h2 class="font-heading text-2xl md:text-3xl text-navy font-semibold">Qualifications & Fellowships</h2>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <i data-lucide="graduation-cap" class="text-teal w-5 h-5 shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-navy">MBBS</h4>
+                                <p class="text-navy/80 text-sm font-light">JSS Medical College, Mysuru</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="graduation-cap" class="text-teal w-5 h-5 shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-navy">MS (Orthopaedics)</h4>
+                                <p class="text-navy/80 text-sm font-light">Vijayanagara Institute of Medical Sciences (VIMS), Bellary</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="award" class="text-teal w-5 h-5 shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-navy">FIJS</h4>
+                                <p class="text-navy/80 text-sm font-light">Fellowship in Joint Replacement Surgery (Germany, USA, Belgium & South Korea)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Publications & Research -->
+        <section class="py-20 md:py-28 bg-sand border-b border-line">
+            <div class="max-w-[1200px] mx-auto px-6 space-y-10">
+                <div class="max-w-2xl space-y-2">
+                    <h2 class="font-heading text-2xl md:text-3xl text-navy font-semibold">Research & Scholarly Publications</h2>
+                    <p class="text-muted font-light">Peer-reviewed papers demonstrating clinical research and evidence-based practice (E-E-A-T).</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-card border border-line shadow-sm space-y-3">
+                        <span class="text-xs font-semibold text-teal bg-teal/10 px-2 py-0.5 rounded">Indian Journal of Orthopaedics (2023)</span>
+                        <h4 class="font-heading text-lg text-navy font-semibold">Intra-operative Safety of an Autonomous Robotic System for Total Knee Replacement: A Review of Cases in India</h4>
+                        <p class="text-navy/75 text-sm font-light">Analysing surgical outcomes and safety metrics of active autonomous robotics platforms used in joint surgery.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-card border border-line shadow-sm space-y-3">
+                        <span class="text-xs font-semibold text-teal bg-teal/10 px-2 py-0.5 rounded">International Archives of Surgery</span>
+                        <h4 class="font-heading text-lg text-navy font-semibold">Patient-Specific Intra-operative Guides (Custom Fit) in Knee Replacement</h4>
+                        <p class="text-navy/75 text-sm font-light font-body">An analysis of anatomical templates and 3D custom fitting technologies during total knee arthroplasty.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-card border border-line shadow-sm space-y-3">
+                        <span class="text-xs font-semibold text-teal bg-teal/10 px-2 py-0.5 rounded">AACE Clinical Case Reports (2016)</span>
+                        <h4 class="font-heading text-lg text-navy font-semibold">Tumour-Induced Osteomalacia due to Phosphaturic Mesenchymal Tumour of the Sphenoid Bone</h4>
+                        <p class="text-navy/75 text-sm font-light font-body">Case analysis regarding rare orthopaedic presentations of mesenchymal tumours and bone density metabolic changes.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-card border border-line shadow-sm space-y-3">
+                        <span class="text-xs font-semibold text-teal bg-teal/10 px-2 py-0.5 rounded">Global Journal of Medical Research (2019)</span>
+                        <h4 class="font-heading text-lg text-navy font-semibold">Arthroscopic Excision of Calcific Deposits on the Lateral Collateral Ligament through a New Portal</h4>
+                        <p class="text-navy/75 text-sm font-light font-body">Clinical report detailing a novel arthroscopic approach for lateral-side knee pathologies (Direct Lateral Portal).</p>
+                    </div>
+                </div>
+
+                <div class="text-center pt-4">
+                    <p class="text-sm text-muted">Full list of publications and research abstracts available upon request.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. In the Media -->
+        <section id="media" class="py-20 md:py-28 bg-white border-b border-line">
+            <div class="max-w-[1200px] mx-auto px-6 space-y-12">
+                <div class="text-center max-w-2xl mx-auto space-y-3">
+                    <h2 class="font-heading text-3xl md:text-4xl text-navy font-semibold tracking-wide">Featured in the Press</h2>
+                    <p class="text-muted font-light">Major national and medical news coverage regarding technology innovations and case success.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Media 1 -->
+                    <a href="https://www.thehansindia.com/news/cities/bengaluru/indias-first-ai-powered-joint-replacement-surgery-unveiled-by-sakra-ikoc-orthopedic-and-multi-specialty-hospital-1039673" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
+                        <span class="text-xs font-bold text-navy tracking-wider uppercase">The Hans India</span>
+                        <h4 class="font-heading text-lg text-navy font-semibold">India's first AI-powered joint replacement surgery unveiled at Sakra IKOC</h4>
+                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    </a>
+
+                    <!-- Media 2 -->
+                    <a href="https://www.digitalhealthnews.com/sakra-ikoc-performs-india-s-first-ai-powered-total-knee-replacement-using-surgical-robots" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
+                        <span class="text-xs font-bold text-navy tracking-wider uppercase">Digital Health News</span>
+                        <h4 class="font-heading text-lg text-navy font-semibold">Sakra IKOC performs India's first AI-powered total knee replacement</h4>
+                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    </a>
+
+                    <!-- Media 3 -->
+                    <a href="https://thisweekindia.news/sakra-ikoc-debuts-indias-first-ai-powered-total-knee-replacement-surgery/" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
+                        <span class="text-xs font-bold text-navy tracking-wider uppercase">This Week India</span>
+                        <h4 class="font-heading text-lg text-navy font-semibold">Sakra IKOC debuts India's first AI-powered total knee replacement</h4>
+                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    </a>
+
+                    <!-- Media 4 -->
+                    <a href="https://medtechspectrum.com/news/10/23195/meril-introduces-advanced-surgical-robotic-technology-misso-in-india.html" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
+                        <span class="text-xs font-bold text-navy tracking-wider uppercase">MedTech Spectrum</span>
+                        <h4 class="font-heading text-lg text-navy font-semibold">Meril introduces advanced surgical robotic technology MISSO in India</h4>
+                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    </a>
+
+                    <!-- Media 5 -->
+                    <a href="https://www.biospectrumindia.com/news/74/17774/sakra-world-hospital-introduces-worlds-first-active-robotic-knee-replacement-system.html" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
+                        <span class="text-xs font-bold text-navy tracking-wider uppercase">BioSpectrum India</span>
+                        <h4 class="font-heading text-lg text-navy font-semibold">World's first fully active robotic knee replacement system (CUVIS) at Sakra</h4>
+                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    </a>
+
+                    <!-- Media 6 -->
+                    <a href="https://www.tribuneindia.com/news/business/pm-modi-applauds-indias-surgical-robotics-innovation-sarvodaya-hospital-sec-8-faridabad-completes-100-robotic-knee-surgeries-with-misso" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
+                        <span class="text-xs font-bold text-navy tracking-wider uppercase">The Tribune</span>
+                        <h4 class="font-heading text-lg text-navy font-semibold">India's homegrown MISSO surgical robotics gains national adoption</h4>
+                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. Videos & Conversations -->
+        <section class="py-20 md:py-28 bg-sand border-b border-line">
+            <div class="max-w-[1200px] mx-auto px-6 space-y-12">
+                <div class="max-w-2xl space-y-2">
+                    <h2 class="font-heading text-3xl text-navy font-semibold">Videos & Patient Explainers</h2>
+                    <p class="text-muted font-light">Explore conversations, technology launches, and visual explanations of orthopedic procedures.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <!-- Featured Video Left -->
+                    <div class="lg:col-span-7 bg-white p-6 rounded-card border border-line shadow-md space-y-4">
+                        <div class="aspect-video bg-navy rounded-lg overflow-hidden relative shadow-inner">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/f7b5phYEWH8" title="Robotic Knee Replacement: Dr Chandrashekar P & Dr Akash Sharma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="space-y-1.5">
+                            <span class="text-xs font-bold text-teal uppercase tracking-widest">Featured: IKOC Diaries</span>
+                            <h3 class="font-heading text-xl text-navy font-semibold">Robotic Knee Replacement: Dr Chandrashekar P & Dr Akash Sharma</h3>
+                            <p class="text-navy/80 text-sm font-light">Surgeons from India and the UK explore the future of robotic knee surgery, sharing their mutual interest in cricket, surgical precision, and patient recovery.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video List Right -->
+                    <div class="lg:col-span-5 space-y-4">
+                        <!-- Video Item 1 -->
+                        <a href="https://www.youtube.com/watch?v=R96bMDgzUBs" target="_blank" class="flex gap-4 p-4 bg-white rounded-card border border-line hover:shadow-md transition-all group">
+                            <div class="w-28 shrink-0 aspect-[4/3] bg-navy rounded overflow-hidden relative shadow-inner">
+                                <img src="https://img.youtube.com/vi/R96bMDgzUBs/hqdefault.jpg" alt="How to Choose the Right Surgeon Thumbnail" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all duration-300">
+                                    <i data-lucide="play" class="text-white w-5 h-5"></i>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <h4 class="font-heading font-semibold text-sm text-navy leading-snug group-hover:text-navy-slate transition-colors">How to Choose the Right Surgeon</h4>
+                                <p class="text-muted text-xs font-light">Dr. Chandrashekar P discusses critical factors to consider when selecting an orthopaedic specialist.</p>
+                            </div>
+                        </a>
+
+                        <!-- Video Item 2 -->
+                        <a href="https://www.youtube.com/watch?v=87YCWoTsZw8" target="_blank" class="flex gap-4 p-4 bg-white rounded-card border border-line hover:shadow-md transition-all group">
+                            <div class="w-28 shrink-0 aspect-[4/3] bg-navy rounded overflow-hidden relative shadow-inner">
+                                <img src="https://img.youtube.com/vi/87YCWoTsZw8/hqdefault.jpg" alt="In conversation with Dr. Marco Ezecheili Thumbnail" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all duration-300">
+                                    <i data-lucide="play" class="text-white w-5 h-5"></i>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <h4 class="font-heading font-semibold text-sm text-navy leading-snug group-hover:text-navy-slate transition-colors">Conversation with Dr. Marco Ezecheili</h4>
+                                <p class="text-muted text-xs font-light">Technical dialogue detailing international advances in robotic systems and athlete recovery.</p>
+                            </div>
+                        </a>
+
+                        <!-- Video Item 3 -->
+                        <a href="https://www.youtube.com/watch?v=_7ss-vU5xbQ" target="_blank" class="flex gap-4 p-4 bg-white rounded-card border border-line hover:shadow-md transition-all group">
+                            <div class="w-28 shrink-0 aspect-[4/3] bg-navy rounded overflow-hidden relative shadow-inner">
+                                <img src="https://img.youtube.com/vi/_7ss-vU5xbQ/hqdefault.jpg" alt="Precision Joint Replacement Thumbnail" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all duration-300">
+                                    <i data-lucide="play" class="text-white w-5 h-5"></i>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <h4 class="font-heading font-semibold text-sm text-navy leading-snug group-hover:text-navy-slate transition-colors">Precision Joint Replacement Overview</h4>
+                                <p class="text-muted text-xs font-light">An explainer on active robotic assistance and advanced patient recovery protocols at IKOC.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. Patient Experiences -->
+        <section class="py-20 md:py-28 bg-white border-b border-line">
+            <div class="max-w-[1200px] mx-auto px-6 space-y-12">
+                <div class="text-center max-w-2xl mx-auto space-y-3">
+                    <h2 class="font-heading text-3xl md:text-4xl text-navy font-semibold tracking-wide">In Their Words</h2>
+                    <p class="text-muted font-light">Patient care stories and recovery experiences shared with consent.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-sand/20 p-8 rounded-card border border-line space-y-4 flex flex-col justify-between">
+                        <p class="text-navy/85 font-light italic leading-relaxed text-sm md:text-base">
+                            "The surgical plan was explained to me in detail using computer models. I was back on my feet walking with support within a day of my robotic knee replacement. The precision is visible in my recovery."
+                        </p>
+                        <div>
+                            <h4 class="font-semibold text-navy text-sm">R. K. Sharma</h4>
+                            <p class="text-muted text-xs">Total Knee Replacement Patient</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-sand/20 p-8 rounded-card border border-line space-y-4 flex flex-col justify-between">
+                        <p class="text-navy/85 font-light italic leading-relaxed text-sm md:text-base">
+                            "As a runner, finding out I had a complex meniscus tear was devastating. Dr. Chandrashekar preservation-first approach and arthroscopic surgery saved my natural joint. Highly professional care."
+                        </p>
+                        <div>
+                            <h4 class="font-semibold text-navy text-sm">P. Subramaniam</h4>
+                            <p class="text-muted text-xs">Meniscus Repair Patient</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-sand/20 p-8 rounded-card border border-line space-y-4 flex flex-col justify-between">
+                        <p class="text-navy/85 font-light italic leading-relaxed text-sm md:text-base">
+                            "The robotic surgery gave me my active life back. The pain management post-operation was outstanding, and the physical rehabilitation support at Sakra and IKOC was systematic and compassionate."
+                        </p>
+                        <div>
+                            <h4 class="font-semibold text-navy text-sm">S. Fernandez</h4>
+                            <p class="text-muted text-xs">Robotic Knee Surgery Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-sand/50 p-4 border border-line rounded-lg text-center max-w-3xl mx-auto">
+                    <p class="text-[11px] text-muted leading-relaxed font-light">
+                        <strong>Compliance Disclaimer:</strong> These are individual experiences shared with consent. Results and recovery vary from person to person and are not guaranteed. Please consult a qualified doctor for medical advice specific to your condition.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 14. Conditions & Procedures -->
+        <section class="py-20 md:py-28 bg-sand border-b border-line">
+            <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                <!-- Conditions -->
+                <div class="space-y-6">
+                    <h2 class="font-heading text-2xl md:text-3xl text-navy font-semibold">Conditions Treated</h2>
+                    <div class="flex flex-wrap gap-2.5">
+                        <span class="bg-white border border-line text-navy/85 px-4 py-2 rounded-full text-sm font-medium">Knee Osteoarthritis</span>
+                        <span class="bg-white border border-line text-navy/85 px-4 py-2 rounded-full text-sm font-medium">ACL / PCL Ligament Injuries</span>
+                        <span class="bg-white border border-line text-navy/85 px-4 py-2 rounded-full text-sm font-medium">Meniscus Tears</span>
+                        <span class="bg-white border border-line text-navy/85 px-4 py-2 rounded-full text-sm font-medium">Cartilage Damage</span>
+                        <span class="bg-white border border-line text-navy/85 px-4 py-2 rounded-full text-sm font-medium">Hip Arthritis & Fractures</span>
+                        <span class="bg-white border border-line text-navy/85 px-4 py-2 rounded-full text-sm font-medium">Rotator Cuff Tears & Shoulder Instability</span>
+                        <span class="bg-white border border-line text-navy/85 px-4 py-2 rounded-full text-sm font-medium">Sports Injuries</span>
+                        <span class="bg-white border border-line text-navy/85 px-4 py-2 rounded-full text-sm font-medium">Failed/Loosened Replacements</span>
+                    </div>
+                </div>
+
+                <!-- Procedures -->
+                <div class="space-y-6">
+                    <h2 class="font-heading text-2xl md:text-3xl text-navy font-semibold">Procedures Offered</h2>
+                    <div class="flex flex-wrap gap-2.5">
+                        <span class="bg-white border border-line text-teal-deep px-4 py-2 rounded-full text-sm font-medium">Robotic Total Knee Replacement</span>
+                        <span class="bg-white border border-line text-teal-deep px-4 py-2 rounded-full text-sm font-medium">Partial (Unicondylar) Knee Replacement</span>
+                        <span class="bg-white border border-line text-teal-deep px-4 py-2 rounded-full text-sm font-medium">Computer-Assisted Knee Replacement</span>
+                        <span class="bg-white border border-line text-teal-deep px-4 py-2 rounded-full text-sm font-medium">Knee Resurfacing Surgery</span>
+                        <span class="bg-white border border-line text-teal-deep px-4 py-2 rounded-full text-sm font-medium">Hip Replacement & Revision Surgery</span>
+                        <span class="bg-white border border-line text-teal-deep px-4 py-2 rounded-full text-sm font-medium">Shoulder Replacement</span>
+                        <span class="bg-white border border-line text-teal-deep px-4 py-2 rounded-full text-sm font-medium">Knee & Shoulder Arthroscopy</span>
+                        <span class="bg-white border border-line text-teal-deep px-4 py-2 rounded-full text-sm font-medium">Meniscus Repair & Transplantation</span>
+                        <span class="bg-white border border-line text-teal-deep px-4 py-2 rounded-full text-sm font-medium">Ligament Reconstruction (ACL/PCL)</span>
+                        <span class="bg-white border border-line text-teal-deep px-4 py-2 rounded-full text-sm font-medium">Cartilage Restoration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 15. Frequently Asked Questions -->
+        <section class="py-20 md:py-28 bg-white border-b border-line">
+            <div class="max-w-[800px] mx-auto px-6 space-y-12">
+                <div class="text-center space-y-3">
+                    <h2 class="font-heading text-3xl md:text-4xl text-navy font-semibold tracking-wide">Frequently Asked Questions</h2>
+                    <p class="text-muted font-light">Understanding treatments, robotics, and what to expect during recovery.</p>
+                </div>
+
+                <div class="space-y-4" x-data="{ active: 0 }">
+                    <!-- FAQ 1 -->
+                    <div class="border border-line rounded-card overflow-hidden transition-all bg-sand/10">
+                        <button class="w-full flex items-center justify-between p-6 text-left font-heading font-semibold text-lg text-navy hover:text-teal-deep focus:outline-none" @click="active = (active === 1 ? 0 : 1)">
+                            <span>Who is Dr. Chandrashekar P?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-muted transition-transform duration-200" :class="active === 1 ? 'rotate-180' : ''"></i>
+                        </button>
+                        <div class="px-6 pb-6 text-navy/80 text-sm md:text-base font-light border-t border-line/5 pt-4" x-show="active === 1" x-collapse>
+                            Dr. Chandrashekar P is a Bengaluru-based orthopaedic surgeon specialising in robotic and computer-assisted knee and joint replacement. He is the Founder of IKOC and Head of Orthopaedics at Sakra World Hospital.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="border border-line rounded-card overflow-hidden transition-all bg-sand/10">
+                        <button class="w-full flex items-center justify-between p-6 text-left font-heading font-semibold text-lg text-navy hover:text-teal-deep focus:outline-none" @click="active = (active === 2 ? 0 : 2)">
+                            <span>How is robotic knee replacement different from conventional surgery?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-muted transition-transform duration-200" :class="active === 2 ? 'rotate-180' : ''"></i>
+                        </button>
+                        <div class="px-6 pb-6 text-navy/80 text-sm md:text-base font-light border-t border-line/5 pt-4" x-show="active === 2" x-collapse>
+                            It adds detailed pre-surgical planning and real-time guidance during the operation, which can improve the accuracy of implant positioning. Whether it suits you depends on your anatomy and overall health, decided after assessment.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="border border-line rounded-card overflow-hidden transition-all bg-sand/10">
+                        <button class="w-full flex items-center justify-between p-6 text-left font-heading font-semibold text-lg text-navy hover:text-teal-deep focus:outline-none" @click="active = (active === 3 ? 0 : 3)">
+                            <span>Is robotic knee replacement available in Bangalore?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-muted transition-transform duration-200" :class="active === 3 ? 'rotate-180' : ''"></i>
+                        </button>
+                        <div class="px-6 pb-6 text-navy/80 text-sm md:text-base font-light border-t border-line/5 pt-4" x-show="active === 3" x-collapse>
+                            Yes. Dr. Chandrashekar P performs robotic and computer-assisted knee replacement in Bangalore at IKOC (HSR Layout) and Sakra World Hospital (Bellandur).
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="border border-line rounded-card overflow-hidden transition-all bg-sand/10">
+                        <button class="w-full flex items-center justify-between p-6 text-left font-heading font-semibold text-lg text-navy hover:text-teal-deep focus:outline-none" @click="active = (active === 4 ? 0 : 4)">
+                            <span>How long is recovery after knee replacement?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-muted transition-transform duration-200" :class="active === 4 ? 'rotate-180' : ''"></i>
+                        </button>
+                        <div class="px-6 pb-6 text-navy/80 text-sm md:text-base font-light border-t border-line/5 pt-4" x-show="active === 4" x-collapse>
+                            Most people begin walking with support very soon after surgery and progress over the following weeks with physiotherapy. Recovery timelines differ by individual and procedure.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="border border-line rounded-card overflow-hidden transition-all bg-sand/10">
+                        <button class="w-full flex items-center justify-between p-6 text-left font-heading font-semibold text-lg text-navy hover:text-teal-deep focus:outline-none" @click="active = (active === 5 ? 0 : 5)">
+                            <span>Am I too old for knee replacement surgery?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-muted transition-transform duration-200" :class="active === 5 ? 'rotate-180' : ''"></i>
+                        </button>
+                        <div class="px-6 pb-6 text-navy/80 text-sm md:text-base font-light border-t border-line/5 pt-4" x-show="active === 5" x-collapse>
+                            Age alone rarely rules it out. Overall health, bone quality and fitness for surgery matter more. A consultation is the best way to know.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 16. Locations & Booking -->
+        <section id="contact" class="py-20 md:py-28 bg-sand border-b border-line">
+            <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+                <!-- Location Cards -->
+                <div class="lg:col-span-7 space-y-8">
+                    <h2 class="font-heading text-3xl text-navy font-semibold tracking-wide">Consultation Locations in Bangalore</h2>
+                    
+                    <div class="max-w-2xl">
+                        <!-- Location 1 -->
+                        <div class="bg-white p-6 rounded-card border border-line shadow-sm space-y-4">
+                            <div class="h-10 flex items-center">
+                                <img src="ikoc-logo-transparent.png" alt="IKOC Logo" class="h-10 object-contain">
+                            </div>
+                            <h3 class="font-heading text-xl text-navy font-semibold">IKOC, International Knee & Orthopaedic Centre</h3>
+                            <p class="text-navy/80 text-sm font-light leading-relaxed">
+                                L-166, 3rd Floor, 5th Main Service Road, Sector 6, Outer Ring Road, HSR Layout, Bengaluru (next to Focus Diagnostics)
+                            </p>
+                            <div class="flex items-center gap-2 text-sm text-teal-deep font-semibold">
+                                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                <span>HSR Layout Clinic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Panel -->
+                <div class="lg:col-span-5 bg-white p-8 rounded-card border border-line shadow-lg space-y-6">
+                    <h3 class="font-heading text-2xl text-navy font-semibold">Book an Appointment</h3>
+                    <p class="text-navy/80 text-sm font-light">Select your preferred platform or contact the clinical desks directly.</p>
+                    
+                    <div class="space-y-4">
+                        <a href="https://www.practo.com/bangalore/doctor/dr-chandrashekar-orthopedist" target="_blank" class="flex items-center justify-between w-full p-4 bg-teal text-white rounded-lg font-semibold shadow hover:bg-teal-deep transition-all">
+                            <span>Book Online via Practo</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+
+                        <a href="https://wa.me/918049261111" class="flex items-center justify-between w-full p-4 bg-emerald-600 text-white rounded-lg font-semibold shadow hover:bg-emerald-700 transition-all">
+                            <span>WhatsApp Consultation Desk</span>
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </a>
+
+                        <div class="border-t border-line pt-4 text-center">
+                            <span class="text-xs text-muted block mb-2 font-medium">OR CALL DIRECTLY</span>
+                            <a href="tel:+918049261111" class="text-xl font-semibold text-navy hover:text-teal transition-colors">
+                                +91 80 4926 1111
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 17. Footer -->
+    <footer class="bg-navy py-16 text-white border-t border-navy-slate/30">
+        <div class="max-w-[1200px] mx-auto px-6 space-y-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-6 space-y-4">
+                    <div class="inline-flex items-center bg-white px-3 py-1.5 rounded-lg mb-2">
+                        <img src="ikoc-logo-transparent.png" alt="IKOC Logo" class="h-8 object-contain">
+                    </div>
+                    <h3 class="font-heading text-xl font-semibold text-white">Dr. Chandrashekar P</h3>
+                    <p class="text-xs text-sand/80 max-w-sm font-light">
+                        MBBS, MS (Orthopaedics), FIJS · Karnataka Medical Council Reg. No. 66588
+                    </p>
+                    <p class="text-xs text-sand/80 max-w-sm font-light">
+                        Founder & Chairman, IKOC Bengaluru | HOD Orthopaedics, Sakra World Hospital
+                    </p>
+                </div>
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-teal text-sm font-semibold tracking-wider uppercase">Quick Links</h4>
+                    <ul class="space-y-2 text-xs text-sand/70 font-light">
+                        <li><a href="#about" class="hover:text-white transition-colors">About bio</a></li>
+                        <li><a href="#robotic" class="hover:text-white transition-colors">Robotic Surgery</a></li>
+                        <li><a href="#expertise" class="hover:text-white transition-colors">Areas of Expertise</a></li>
+                        <li><a href="#media" class="hover:text-white transition-colors">Media Coverage</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+ 
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-teal text-sm font-semibold tracking-wider uppercase">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.youtube.com/@IKOCDiaries-DrChandrashekarP" target="_blank" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-teal hover:border-teal transition-colors" aria-label="YouTube Channel">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 text-white" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dr-chandrashekar-p-ortho" target="_blank" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-teal hover:border-teal transition-colors" aria-label="LinkedIn Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 text-white" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.145 2.4 3.854c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-navy-slate/30 pt-8 text-[11px] text-sand/60 font-light space-y-4">
+                <p>
+                    <strong>Site Disclaimer:</strong> The information on this website is for general awareness only and is not a substitute for professional medical advice, diagnosis or treatment. Individual results and surgical recovery timelines vary from person to person. Always consult a qualified doctor or healthcare professional regarding any medical condition or treatment plan.
+                </p>
+                <p class="text-center">
+                    &copy; 2026 Dr. Chandrashekar P Portfolio. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA Bar (screens < 640px) -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-line shadow-lg px-4 py-3 flex gap-3 sm:hidden">
+        <a href="tel:+918049261111" class="flex-1 flex items-center justify-center gap-2 border border-teal text-teal-deep py-3 rounded-btn font-semibold text-sm transition-all">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            <span>Call Clinic</span>
+        </a>
+        <a href="#contact" class="flex-1 flex items-center justify-center gap-2 bg-teal text-white py-3 rounded-btn font-semibold text-sm transition-all">
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            <span>Book Appt</span>
+        </a>
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
