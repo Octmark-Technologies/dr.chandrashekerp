@@ -259,7 +259,7 @@
                     <h1 class="font-heading text-navy font-semibold leading-tight space-y-2">
                         <span class="block text-4xl md:text-5xl lg:text-6xl tracking-tight">Dr. Chandrashekar P</span>
                         <span class="block text-xl md:text-2xl lg:text-3xl text-navy-slate font-medium tracking-wide">
-                            Complex Orthopaedic Surgeon | Sports Arthroscopy & Arthroplasty
+                            Renowned Orthopaedic Surgeon | Sports Arthroscopy & Arthroplasty
                         </span>
                     </h1>
                     
@@ -330,13 +330,13 @@
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center" x-data="{
                     surgeries: 50000,
                     replacements: 2500,
-                    robotic: 1500,
-                    meniscus: 10000,
+                    robotic: 3000,
+                    meniscus: 12000,
                     animateCounters() {
                         const targetSurgeries = 50000;
                         const targetReplacements = 2500;
-                        const targetRobotic = 1500;
-                        const targetMeniscus = 10000;
+                        const targetRobotic = 3000;
+                        const targetMeniscus = 12000;
                         
                         this.surgeries = 0;
                         this.replacements = 0;
@@ -371,15 +371,15 @@
                     </div>
                     <div class="space-y-2">
                         <div class="font-heading text-3xl md:text-5xl font-semibold text-teal" x-text="replacements.toLocaleString() + '+'">2,500+</div>
-                        <div class="text-xs md:text-sm text-sand/80 font-light">Replacements in a Single Year <br><span class="text-teal/85 text-[10px] uppercase font-semibold tracking-wider">(State Record)</span></div>
+                        <div class="text-xs md:text-sm text-sand/80 font-light">Replacements in a Single Year <br><span class="text-teal/85 text-[10px] uppercase font-semibold tracking-wider">(Global Benchmark)</span></div>
                     </div>
                     <div class="space-y-2">
-                        <div class="font-heading text-3xl md:text-5xl font-semibold text-teal" x-text="robotic.toLocaleString() + '+'">1,500+</div>
-                        <div class="text-xs md:text-sm text-sand/80 font-light">AI-Powered Joint Surgeries</div>
+                        <div class="font-heading text-3xl md:text-5xl font-semibold text-teal" x-text="robotic.toLocaleString() + '+'">3,000+</div>
+                        <div class="text-xs md:text-sm text-sand/80 font-light">Active Robotic Knee Surgeries <br><span class="text-teal/85 text-[10px] uppercase font-semibold tracking-wider">(India Pioneer)</span></div>
                     </div>
                     <div class="space-y-2">
-                        <div class="font-heading text-3xl md:text-5xl font-semibold text-teal" x-text="meniscus.toLocaleString() + '+'">10,000+</div>
-                        <div class="text-xs md:text-sm text-sand/80 font-light">Meniscus Repairs & All-Inside Devices</div>
+                        <div class="font-heading text-3xl md:text-5xl font-semibold text-teal" x-text="meniscus.toLocaleString() + '+'">12,000+</div>
+                        <div class="text-xs md:text-sm text-sand/80 font-light">Meniscus Repairs & All-Inside Devices <br><span class="text-teal/85 text-[10px] uppercase font-semibold tracking-wider">(National Record)</span></div>
                     </div>
                 </div>
 
@@ -401,27 +401,119 @@
                     <div class="border-l-4 border-teal pl-4 italic text-navy/85 font-heading text-lg md:text-xl leading-relaxed py-2">
                         “Advanced technology matters, but so does treating every patient like family.”
                     </div>
+                    <div class="grid grid-cols-2 gap-3 pt-2">
+                        <div class="bg-sand/40 border border-line p-3 rounded-card text-center space-y-0.5">
+                            <div class="font-heading text-xl font-bold text-teal">50,000+</div>
+                            <div class="text-[11px] text-navy/70 font-medium">Surgeries Performed</div>
+                        </div>
+                        <div class="bg-sand/40 border border-line p-3 rounded-card text-center space-y-0.5">
+                            <div class="font-heading text-xl font-bold text-teal">3,000+</div>
+                            <div class="text-[11px] text-navy/70 font-medium">Robotic Knee Surgeries</div>
+                        </div>
+                        <div class="bg-sand/40 border border-line p-3 rounded-card text-center space-y-0.5">
+                            <div class="font-heading text-xl font-bold text-teal">12,000+</div>
+                            <div class="text-[11px] text-navy/70 font-medium">Meniscal Repairs (Record)</div>
+                        </div>
+                        <div class="bg-sand/40 border border-line p-3 rounded-card text-center space-y-0.5">
+                            <div class="font-heading text-xl font-bold text-teal">50+</div>
+                            <div class="text-[11px] text-navy/70 font-medium">Fellows Mentored</div>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Right Text -->
                 <div class="lg:col-span-7 space-y-6 scroll-fade-up delay-200" :class="{ 'visible': shown }">
-                    <h2 class="font-heading text-3xl md:text-4xl text-navy font-semibold tracking-wide">
-                        About Dr. Chandrashekar P
-                    </h2>
+                    <div class="space-y-3">
+                        <div class="inline-flex items-center space-x-2 bg-teal/10 border border-teal/20 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-teal-deep uppercase">
+                            <i data-lucide="award" class="w-3.5 h-3.5"></i>
+                            <span>Pioneering Surgeon & Robotics Innovator</span>
+                        </div>
+                        <h2 class="font-heading text-3xl md:text-4xl text-navy font-semibold tracking-wide">
+                            About Dr. Chandrashekar P
+                        </h2>
+                        <p class="text-teal-deep font-semibold text-base md:text-lg font-heading tracking-wide">
+                            Renowned Orthopaedic Surgeon | Sports Arthroscopy & Arthroplasty
+                        </p>
+                    </div>
                     
-                    <div class="space-y-5 text-navy/90 text-base md:text-lg leading-relaxed font-light">
+                    <div class="space-y-4 text-navy/90 text-base md:text-lg leading-relaxed font-light">
                         <p>
-                            Dr. Chandrashekar P is a Bengaluru-based orthopaedic surgeon who has dedicated his career to the knee and to joint replacement, with a special focus on robotic and computer-assisted techniques. He is the Founder of the International Knee & Orthopaedic Centre (<a href="https://ikoc.in" target="_blank" class="text-teal-deep hover:underline font-semibold">IKOC</a>) and Head of Orthopaedics at Sakra World Hospital.
+                            Dr. Chandrashekar P is a distinguished orthopaedic surgeon and India’s foremost pioneer in active robotic joint replacement. As Founder of the International Knee & Orthopaedic Centre (<a href="https://ikoc.in" target="_blank" class="text-teal-deep hover:underline font-semibold">IKOC</a>) and Head of Orthopaedics at Sakra World Hospital, Bengaluru, he has performed more than <strong>50,000 orthopaedic surgeries</strong> and is recognized among the top knee specialists worldwide.
                         </p>
                         <p>
-                            With over two decades of active practice, he has helped thousands of patients regain mobility—specializing in complex orthopaedic reconstructions, robotic total/partial knee replacements, keyhole ligament reconstructions, and advanced cartilage preservation techniques.
+                            The first surgeon in India to introduce Active Robotic Joint Replacement using the CUVIS system, Dr. Chandrashekar served on its global design team and is a key co-designer of <strong>MISSO</strong>, India’s first indigenous surgical robot. His practice commands over <strong>3,000 active robotic knee replacements</strong>, <strong>12,000+ meniscal repairs</strong> (highest in the country), and record-setting volumes of over <strong>2,500 joint replacements in a single year</strong>.
                         </p>
-                        <p>
-                            He was an early adopter of robotic joint replacement in India and co-created <strong>MISSO</strong>, positioned as the country’s first fully indigenous knee-replacement robot, with the aim of making precise, technology-assisted surgery more affordable and available beyond the big metros.
-                        </p>
-                        <p>
-                            Alongside surgery, he trains orthopaedic surgeons from India and abroad, lectures at national and international conferences, and publishes on robotic surgery, custom-fit implants and arthroscopy.
-                        </p>
+                    </div>
+
+                    <!-- Personal Branding Hallmarks Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+                        <!-- Hallmark 1 -->
+                        <div class="p-4 rounded-card bg-sand/50 border border-line hover:border-teal/30 transition-all space-y-1.5">
+                            <div class="flex items-center gap-2 text-teal-deep font-semibold text-xs tracking-wider uppercase">
+                                <div class="w-7 h-7 rounded-lg bg-teal/10 flex items-center justify-center text-teal shrink-0">
+                                    <i data-lucide="cpu" class="w-4 h-4"></i>
+                                </div>
+                                <span>Robotic Co-Creator</span>
+                            </div>
+                            <p class="text-xs text-navy/80 font-light leading-relaxed">
+                                Key designer of <strong>MISSO</strong> (India’s 1st indigenous robot) & CUVIS design team; 3,000+ active robotic surgeries.
+                            </p>
+                        </div>
+
+                        <!-- Hallmark 2 -->
+                        <div class="p-4 rounded-card bg-sand/50 border border-line hover:border-teal/30 transition-all space-y-1.5">
+                            <div class="flex items-center gap-2 text-teal-deep font-semibold text-xs tracking-wider uppercase">
+                                <div class="w-7 h-7 rounded-lg bg-teal/10 flex items-center justify-center text-teal shrink-0">
+                                    <i data-lucide="award" class="w-4 h-4"></i>
+                                </div>
+                                <span>South Asia Firsts</span>
+                            </div>
+                            <p class="text-xs text-navy/80 font-light leading-relaxed">
+                                1st in South Asia for navigated ACL; 1st in India for NEO artificial ligament & highest Meniscus Transplants in India.
+                            </p>
+                        </div>
+
+                        <!-- Hallmark 3 -->
+                        <div class="p-4 rounded-card bg-sand/50 border border-line hover:border-teal/30 transition-all space-y-1.5">
+                            <div class="flex items-center gap-2 text-teal-deep font-semibold text-xs tracking-wider uppercase">
+                                <div class="w-7 h-7 rounded-lg bg-teal/10 flex items-center justify-center text-teal shrink-0">
+                                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                                </div>
+                                <span>Surgical Discovery</span>
+                            </div>
+                            <p class="text-xs text-navy/80 font-light leading-relaxed">
+                                Discovered the novel <strong>Direct Lateral Portal</strong> arthroscopic approach; pioneered AI IntelliJoint navigation in India.
+                            </p>
+                        </div>
+
+                        <!-- Hallmark 4 -->
+                        <div class="p-4 rounded-card bg-sand/50 border border-line hover:border-teal/30 transition-all space-y-1.5">
+                            <div class="flex items-center gap-2 text-teal-deep font-semibold text-xs tracking-wider uppercase">
+                                <div class="w-7 h-7 rounded-lg bg-teal/10 flex items-center justify-center text-teal shrink-0">
+                                    <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                                </div>
+                                <span>Master Educator</span>
+                            </div>
+                            <p class="text-xs text-navy/80 font-light leading-relaxed">
+                                Trained 50+ fellows in arthroscopy & joint replacement; trains national & international surgeons in robotic knee techniques.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Platform Mastery Strip -->
+                    <div class="pt-4 border-t border-line/60 space-y-2.5">
+                        <span class="text-[11px] font-semibold text-navy/60 uppercase tracking-wider block">Hands-on Mastery Across Active Robotic & Navigation Systems</span>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-navy/85">
+                            <span class="bg-slate-100/90 px-2.5 py-1 rounded-md border border-line">CUVIS Robot</span>
+                            <span class="bg-slate-100/90 px-2.5 py-1 rounded-md border border-line">MISSO Robot</span>
+                            <span class="bg-slate-100/90 px-2.5 py-1 rounded-md border border-line">Mako</span>
+                            <span class="bg-slate-100/90 px-2.5 py-1 rounded-md border border-line">ROSA</span>
+                            <span class="bg-slate-100/90 px-2.5 py-1 rounded-md border border-line">CORI</span>
+                            <span class="bg-slate-100/90 px-2.5 py-1 rounded-md border border-line">VELYS</span>
+                            <span class="bg-slate-100/90 px-2.5 py-1 rounded-md border border-line">Orthopilot</span>
+                            <span class="bg-slate-100/90 px-2.5 py-1 rounded-md border border-line">Stryker Navigation</span>
+                            <span class="bg-slate-100/90 px-2.5 py-1 rounded-md border border-line">IntelliJoint AI</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -498,7 +590,7 @@
             <div class="max-w-[1200px] mx-auto px-6 space-y-16">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                 <!-- Text Left -->
-                <div class="lg:col-span-7 space-y-6 scroll-fade-up" :class="{ 'visible': shown }">
+                <div class="lg:col-span-5 space-y-6 scroll-fade-up" :class="{ 'visible': shown }">
                     <h2 class="font-heading text-3xl md:text-4xl text-navy font-semibold tracking-wide">
                         Precision You Can Plan For
                     </h2>
@@ -508,7 +600,7 @@
                     </p>
                     
                     <h4 class="font-heading text-lg text-navy font-semibold pt-2">What this can mean for patients:</h4>
-                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <ul class="space-y-3">
                         <li class="flex items-start gap-2.5">
                             <i data-lucide="check" class="text-teal w-5 h-5 shrink-0 mt-0.5"></i>
                             <span class="text-navy/85 text-sm font-light">More accurate implant alignment and sizing</span>
@@ -531,21 +623,23 @@
                         *Suitability for robotic surgery is decided after a full clinical assessment. Individual outcomes vary.
                     </p>
 
-                    <div class="pt-4 flex flex-wrap items-center gap-4">
-                        <a href="#contact" class="bg-teal hover:bg-teal-deep text-white px-8 py-3.5 rounded-btn font-semibold text-sm tracking-wide shadow-md transition-all inline-block">
+                    <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                        <a href="#contact" class="bg-teal hover:bg-teal-deep text-white px-8 py-3.5 rounded-btn font-semibold text-sm tracking-wide shadow-md transition-all text-center">
                             Ask if robotic surgery is right for you
                         </a>
-                        <a href="#patient-stories" class="inline-flex items-center gap-2 text-navy-slate hover:text-navy text-sm font-semibold py-2 transition-colors">
+                        <a href="#patient-stories" class="inline-flex items-center justify-center gap-2 text-navy-slate hover:text-navy text-sm font-semibold py-2 transition-colors">
                             <i data-lucide="play-circle" class="w-4 h-4 text-teal"></i>
                             <span>Watch Patient Recovery Videos</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- Graphic/Illustration Right -->
-                <div class="lg:col-span-5 scroll-scale-in delay-200" :class="{ 'visible': shown }">
-                    <div class="relative rounded-card overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/3]">
-                        <img src="robotic_surgery.jpg" alt="Active robotic knee replacement surgical arm and 3D planning screen showing joint mapping in theatre" class="w-full h-full object-cover object-center">
+                <!-- Graphic/Illustration Right (Enlarged) -->
+                <div class="lg:col-span-7 scroll-scale-in delay-200" :class="{ 'visible': shown }">
+                    <div class="relative rounded-[20px] overflow-hidden shadow-2xl border-4 border-white bg-slate-100 group">
+                        <div class="relative aspect-[16/10] overflow-hidden">
+                            <img src="doctor_robotic_suite.jpg" alt="Dr. Chandrashekar P with full robotic knee replacement surgical suite: VELYS, CUVIS, Stryker Mako, MISSO and OrthoPilot" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -556,11 +650,6 @@
                 <div class="lg:col-span-5 space-y-6 scroll-scale-in" :class="{ 'visible': shown }">
                     <div class="relative rounded-card overflow-hidden shadow-xl border-4 border-white bg-slate-100 aspect-[1024/616] group">
                         <img src="intellijoint_showcase.jpg" alt="Dr. Chandrashekar P demonstrating the IntelliJoint KNEE smart navigation system - First time in India" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute top-3 left-3">
-                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-navy bg-white/95 backdrop-blur-md px-3 py-1 rounded-full shadow-md border border-line">
-                                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-teal"></i> Pioneer in India
-                            </span>
-                        </div>
                     </div>
 
                     <!-- Pinless & Imageless Advantage Card -->
@@ -609,9 +698,43 @@
                         <h3 class="font-heading text-2xl md:text-3xl text-navy font-semibold tracking-wide">
                             IntelliJoint KNEE Smart Navigation
                         </h3>
-                        <p class="text-teal-deep text-sm font-medium mt-1">
-                            Among the First Surgeons in India to Introduce & Perform IntelliJoint Joint Replacements
+                        <p class="text-teal-deep text-sm md:text-base font-semibold mt-1">
+                            Pioneered India’s 1st AI-Powered Total Knee Replacement & Optical Smart Navigation
                         </p>
+                    </div>
+
+                    <!-- Dr. C.P.'s Key Achievements with IntelliJoint -->
+                    <div class="bg-gradient-to-br from-sand via-blue-tint/60 to-white border border-teal/25 rounded-card p-5 space-y-3.5 shadow-sm">
+                        <div class="flex items-center justify-between flex-wrap gap-2 border-b border-teal/15 pb-2.5">
+                            <div class="flex items-center gap-2">
+                                <div class="w-7 h-7 rounded-full bg-teal/15 text-teal flex items-center justify-center shrink-0">
+                                    <i data-lucide="award" class="w-4 h-4"></i>
+                                </div>
+                                <h4 class="font-heading text-sm md:text-base font-semibold text-navy">
+                                    Dr. Chandrashekar P’s Achievements in IntelliJoint
+                                </h4>
+                            </div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-teal-deep bg-teal/10 px-2.5 py-0.5 rounded-full">
+                                Clinical Pioneer
+                            </span>
+                        </div>
+                        <p class="text-xs md:text-sm text-navy/90 font-light leading-relaxed">
+                            <strong>Dr. Chandrashekar P is among the first surgeons in India to introduce and use IntelliJoint technology</strong>, bringing advanced precision, optical guidance, and digital innovation to modern joint replacement surgery. He pioneered <strong>India’s first AI-powered Total Knee Replacement (TKR)</strong> using this imageless smart navigation platform, setting a new benchmark for data-driven orthopaedics and continuous surgical refinement in India.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
+                            <div class="bg-white p-3 rounded-lg border border-line/70 shadow-2xs">
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-teal-deep block">Surgical Landmark</span>
+                                <span class="text-xs font-semibold text-navy block mt-0.5">India’s 1st AI-Powered TKR</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border border-line/70 shadow-2xs">
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-teal-deep block">National Adoption</span>
+                                <span class="text-xs font-semibold text-navy block mt-0.5">1st in India with IntelliJoint</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border border-line/70 shadow-2xs">
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-teal-deep block">New Benchmark</span>
+                                <span class="text-xs font-semibold text-navy block mt-0.5">Data-Driven Orthopaedics</span>
+                            </div>
+                        </div>
                     </div>
                     
                     <p class="text-navy/90 text-sm md:text-base leading-relaxed font-light">
@@ -850,12 +973,8 @@
                             </div>
                         </div>
                         <div class="lg:col-span-5">
-                            <div class="relative rounded-[20px] overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-navy">
+                            <div class="relative rounded-[20px] overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-slate-100">
                                 <img src="journey_pics/img_1469.jpg" alt="Dr. Chandrashekar P at IKOC Bengaluru" class="w-full h-full object-cover">
-                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy/90 via-navy/50 to-transparent p-4 text-white">
-                                    <span class="text-[11px] text-[#f2b301] font-semibold block">Founder & Chairman</span>
-                                    <p class="text-xs font-light text-sand/90">International Knee & Orthopaedic Centre (IKOC)</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -896,12 +1015,8 @@
                             </div>
                         </div>
                         <div class="lg:col-span-5">
-                            <div class="relative rounded-[20px] overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-navy">
+                            <div class="relative rounded-[20px] overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-slate-100">
                                 <img src="robotic_surgery.jpg" alt="Active robotic surgical arm in operating theatre" class="w-full h-full object-cover">
-                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy/90 via-navy/50 to-transparent p-4 text-white">
-                                    <span class="text-[11px] text-[#f2b301] font-semibold block">Surgical Precision in Theatre</span>
-                                    <p class="text-xs font-light text-sand/90">Over 3,000+ active robotic knee replacements conducted</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -942,12 +1057,8 @@
                             </div>
                         </div>
                         <div class="lg:col-span-5">
-                            <div class="relative rounded-[20px] overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-navy">
+                            <div class="relative rounded-[20px] overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-slate-100">
                                 <img src="journey_pics/img_1455.jpg" alt="Dr. Chandrashekar P at IKOC Centre" class="w-full h-full object-cover">
-                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy/90 via-navy/50 to-transparent p-4 text-white">
-                                    <span class="text-[11px] text-[#f2b301] font-semibold block">Joint Preservation Pioneer</span>
-                                    <p class="text-xs font-light text-sand/90">Advancing ligament restoration & meniscal biology</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -988,12 +1099,8 @@
                             </div>
                         </div>
                         <div class="lg:col-span-5">
-                            <div class="relative rounded-[20px] overflow-hidden shadow-xl border-4 border-white aspect-[1024/616] bg-navy">
+                            <div class="relative rounded-[20px] overflow-hidden shadow-xl border-4 border-white aspect-[1024/616] bg-slate-100">
                                 <img src="intellijoint_showcase.jpg" alt="Intellijoint smart navigation demonstration" class="w-full h-full object-cover">
-                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy/90 via-navy/50 to-transparent p-4 text-white">
-                                    <span class="text-[11px] text-[#f2b301] font-semibold block">IntelliJoint Smart Sensor System</span>
-                                    <p class="text-xs font-light text-sand/90">Sterile-field digital accuracy without pre-op CT radiation</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1034,12 +1141,8 @@
                             </div>
                         </div>
                         <div class="lg:col-span-5">
-                            <div class="relative rounded-[20px] overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-navy">
+                            <div class="relative rounded-[20px] overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-slate-100">
                                 <img src="journey_pics/img_1462.jpg" alt="Dr. Chandrashekar P at IKOC Centre" class="w-full h-full object-cover">
-                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy/90 via-navy/50 to-transparent p-4 text-white">
-                                    <span class="text-[11px] text-[#f2b301] font-semibold block">Academic Leadership & Fellowship</span>
-                                    <p class="text-xs font-light text-sand/90">Training the next generation of joint replacement surgeons</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1143,46 +1246,136 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Media 1 -->
-                    <a href="https://www.thehansindia.com/news/cities/bengaluru/indias-first-ai-powered-joint-replacement-surgery-unveiled-by-sakra-ikoc-orthopedic-and-multi-specialty-hospital-1039673" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
-                        <span class="text-xs font-bold text-navy tracking-wider uppercase">The Hans India</span>
-                        <h4 class="font-heading text-lg text-navy font-semibold">India's first AI-powered joint replacement surgery unveiled at Sakra IKOC</h4>
-                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    <!-- Media 1: The Hans India -->
+                    <a href="https://www.thehansindia.com/news/cities/bengaluru/indias-first-ai-powered-joint-replacement-surgery-unveiled-by-sakra-ikoc-orthopedic-and-multi-specialty-hospital-1039673" target="_blank" class="group flex flex-col bg-white rounded-card border border-line overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
+                        <div class="relative overflow-hidden aspect-[16/9] bg-slate-100 border-b border-line">
+                            <img src="media_thumbs/thumb_hans_india.jpg" alt="The Hans India press coverage - Sakra IKOC AI Joint Replacement" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 md:p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <span class="text-[11px] font-semibold text-teal uppercase tracking-wider block">National Press · Bengaluru</span>
+                                <h4 class="font-heading text-base md:text-lg text-navy font-semibold leading-snug group-hover:text-teal transition-colors">
+                                    India's first AI-powered joint replacement surgery unveiled at Sakra IKOC
+                                </h4>
+                                <p class="text-xs text-navy/70 font-light leading-relaxed line-clamp-2">
+                                    National press feature detailing Dr. Chandrashekar P and Sakra IKOC debuting real-time AI-guided joint replacement.
+                                </p>
+                            </div>
+                            <div class="pt-2 border-t border-line/60 flex items-center justify-between text-xs font-semibold text-teal-deep">
+                                <span>Read Full Article</span>
+                                <i data-lucide="external-link" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                            </div>
+                        </div>
                     </a>
 
-                    <!-- Media 2 -->
-                    <a href="https://www.digitalhealthnews.com/sakra-ikoc-performs-india-s-first-ai-powered-total-knee-replacement-using-surgical-robots" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
-                        <span class="text-xs font-bold text-navy tracking-wider uppercase">Digital Health News</span>
-                        <h4 class="font-heading text-lg text-navy font-semibold">Sakra IKOC performs India's first AI-powered total knee replacement</h4>
-                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    <!-- Media 2: Digital Health News -->
+                    <a href="https://www.digitalhealthnews.com/sakra-ikoc-performs-india-s-first-ai-powered-total-knee-replacement-using-surgical-robots" target="_blank" class="group flex flex-col bg-white rounded-card border border-line overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
+                        <div class="relative overflow-hidden aspect-[16/9] bg-slate-100 border-b border-line">
+                            <img src="media_thumbs/thumb_digital_health.jpg" alt="Digital Health News - India's first AI-powered total knee replacement" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 md:p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <span class="text-[11px] font-semibold text-teal uppercase tracking-wider block">HealthTech & AI</span>
+                                <h4 class="font-heading text-base md:text-lg text-navy font-semibold leading-snug group-hover:text-teal transition-colors">
+                                    Sakra IKOC performs India's first AI-powered total knee replacement
+                                </h4>
+                                <p class="text-xs text-navy/70 font-light leading-relaxed line-clamp-2">
+                                    Clinical coverage highlighting real-time surgical navigation and sensor tracking for millimeter-level accuracy.
+                                </p>
+                            </div>
+                            <div class="pt-2 border-t border-line/60 flex items-center justify-between text-xs font-semibold text-teal-deep">
+                                <span>Read Full Article</span>
+                                <i data-lucide="external-link" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                            </div>
+                        </div>
                     </a>
 
-                    <!-- Media 3 -->
-                    <a href="https://thisweekindia.news/sakra-ikoc-debuts-indias-first-ai-powered-total-knee-replacement-surgery/" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
-                        <span class="text-xs font-bold text-navy tracking-wider uppercase">This Week India</span>
-                        <h4 class="font-heading text-lg text-navy font-semibold">Sakra IKOC debuts India's first AI-powered total knee replacement</h4>
-                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    <!-- Media 3: This Week India -->
+                    <a href="https://thisweekindia.news/sakra-ikoc-debuts-indias-first-ai-powered-total-knee-replacement-surgery/" target="_blank" class="group flex flex-col bg-white rounded-card border border-line overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
+                        <div class="relative overflow-hidden aspect-[16/9] bg-slate-100 border-b border-line">
+                            <img src="media_thumbs/thumb_this_week_india.jpg" alt="This Week India - Sakra IKOC debuts India's first AI-powered total knee replacement" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 md:p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <span class="text-[11px] font-semibold text-teal uppercase tracking-wider block">National Headline</span>
+                                <h4 class="font-heading text-base md:text-lg text-navy font-semibold leading-snug group-hover:text-teal transition-colors">
+                                    Sakra IKOC debuts India's first AI-powered total knee replacement
+                                </h4>
+                                <p class="text-xs text-navy/70 font-light leading-relaxed line-clamp-2">
+                                    Comprehensive report on the technology launch, pinless navigation advantages, and accelerated recovery timelines.
+                                </p>
+                            </div>
+                            <div class="pt-2 border-t border-line/60 flex items-center justify-between text-xs font-semibold text-teal-deep">
+                                <span>Read Full Article</span>
+                                <i data-lucide="external-link" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                            </div>
+                        </div>
                     </a>
 
-                    <!-- Media 4 -->
-                    <a href="https://medtechspectrum.com/news/10/23195/meril-introduces-advanced-surgical-robotic-technology-misso-in-india.html" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
-                        <span class="text-xs font-bold text-navy tracking-wider uppercase">MedTech Spectrum</span>
-                        <h4 class="font-heading text-lg text-navy font-semibold">Meril introduces advanced surgical robotic technology MISSO in India</h4>
-                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    <!-- Media 4: MedTech Spectrum -->
+                    <a href="https://medtechspectrum.com/news/10/23195/meril-introduces-advanced-surgical-robotic-technology-misso-in-india.html" target="_blank" class="group flex flex-col bg-white rounded-card border border-line overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
+                        <div class="relative overflow-hidden aspect-[16/9] bg-slate-100 border-b border-line">
+                            <img src="media_thumbs/thumb_medtech_spectrum.jpg" alt="MedTech Spectrum - Meril introduces MISSO surgical robotic technology in India" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 md:p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <span class="text-[11px] font-semibold text-teal uppercase tracking-wider block">Indigenous Robotics</span>
+                                <h4 class="font-heading text-base md:text-lg text-navy font-semibold leading-snug group-hover:text-teal transition-colors">
+                                    Meril introduces advanced surgical robotic technology MISSO in India
+                                </h4>
+                                <p class="text-xs text-navy/70 font-light leading-relaxed line-clamp-2">
+                                    Highlighting Dr. Chandrashekar P’s co-creator role in designing India’s first indigenous knee-replacement robot.
+                                </p>
+                            </div>
+                            <div class="pt-2 border-t border-line/60 flex items-center justify-between text-xs font-semibold text-teal-deep">
+                                <span>Read Full Article</span>
+                                <i data-lucide="external-link" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                            </div>
+                        </div>
                     </a>
 
-                    <!-- Media 5 -->
-                    <a href="https://www.biospectrumindia.com/news/74/17774/sakra-world-hospital-introduces-worlds-first-active-robotic-knee-replacement-system.html" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
-                        <span class="text-xs font-bold text-navy tracking-wider uppercase">BioSpectrum India</span>
-                        <h4 class="font-heading text-lg text-navy font-semibold">World's first fully active robotic knee replacement system (CUVIS) at Sakra</h4>
-                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    <!-- Media 5: BioSpectrum India -->
+                    <a href="https://www.biospectrumindia.com/news/74/17774/sakra-world-hospital-introduces-worlds-first-active-robotic-knee-replacement-system.html" target="_blank" class="group flex flex-col bg-white rounded-card border border-line overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
+                        <div class="relative overflow-hidden aspect-[16/9] bg-slate-100 border-b border-line">
+                            <img src="media_thumbs/thumb_biospectrum.jpg" alt="BioSpectrum India - World's first fully active robotic knee replacement system CUVIS at Sakra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 md:p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <span class="text-[11px] font-semibold text-teal uppercase tracking-wider block">Robotics Landmark</span>
+                                <h4 class="font-heading text-base md:text-lg text-navy font-semibold leading-snug group-hover:text-teal transition-colors">
+                                    World's first fully active robotic knee replacement system (CUVIS) at Sakra
+                                </h4>
+                                <p class="text-xs text-navy/70 font-light leading-relaxed line-clamp-2">
+                                    Inauguration by the Chief Minister of Karnataka, launching active robotic surgery led by Dr. Chandrashekar P.
+                                </p>
+                            </div>
+                            <div class="pt-2 border-t border-line/60 flex items-center justify-between text-xs font-semibold text-teal-deep">
+                                <span>Read Full Article</span>
+                                <i data-lucide="external-link" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                            </div>
+                        </div>
                     </a>
 
-                    <!-- Media 6 -->
-                    <a href="https://www.tribuneindia.com/news/business/pm-modi-applauds-indias-surgical-robotics-innovation-sarvodaya-hospital-sec-8-faridabad-completes-100-robotic-knee-surgeries-with-misso" target="_blank" class="block bg-sand/40 hover:bg-sand p-6 rounded-card border border-line shadow-sm transition-all hover:shadow-md hover:-translate-y-1 space-y-3">
-                        <span class="text-xs font-bold text-navy tracking-wider uppercase">The Tribune</span>
-                        <h4 class="font-heading text-lg text-navy font-semibold">India's homegrown MISSO surgical robotics gains national adoption</h4>
-                        <span class="inline-flex items-center gap-1 text-xs text-teal-deep font-semibold">Read Coverage <i data-lucide="external-link" class="w-3 h-3"></i></span>
+                    <!-- Media 6: The Tribune -->
+                    <a href="https://www.tribuneindia.com/news/business/pm-modi-applauds-indias-surgical-robotics-innovation-sarvodaya-hospital-sec-8-faridabad-completes-100-robotic-knee-surgeries-with-misso" target="_blank" class="group flex flex-col bg-white rounded-card border border-line overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
+                        <div class="relative overflow-hidden aspect-[16/9] bg-slate-100 border-b border-line">
+                            <img src="media_thumbs/thumb_tribune.jpg" alt="The Tribune - India's homegrown MISSO surgical robotics gains national adoption" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 md:p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <span class="text-[11px] font-semibold text-teal uppercase tracking-wider block">National Adoption</span>
+                                <h4 class="font-heading text-base md:text-lg text-navy font-semibold leading-snug group-hover:text-teal transition-colors">
+                                    India's homegrown MISSO surgical robotics gains national adoption
+                                </h4>
+                                <p class="text-xs text-navy/70 font-light leading-relaxed line-clamp-2">
+                                    National press feature reporting on surgical milestone adoption of the MISSO indigenous joint robot co-created by Dr. Chandrashekar P.
+                                </p>
+                            </div>
+                            <div class="pt-2 border-t border-line/60 flex items-center justify-between text-xs font-semibold text-teal-deep">
+                                <span>Read Full Article</span>
+                                <i data-lucide="external-link" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
