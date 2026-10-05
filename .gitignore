@@ -4,3 +4,4 @@ scratch/
 .playwright-mcp/
 *playwright*
 media_covers/
+*.mov
