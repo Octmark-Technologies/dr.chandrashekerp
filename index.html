@@ -108,6 +108,16 @@
         .flip-card-back {
             transform: rotateY(180deg);
         }
+
+        /* Hero Slider Progress Bar */
+        @keyframes heroProgressAnim {
+            0% { transform: scaleX(0); }
+            100% { transform: scaleX(1); }
+        }
+        .hero-progress-fill {
+            transform-origin: left;
+            animation: heroProgressAnim 5s linear infinite;
+        }
     </style>
 
     <!-- Alpine.js Plugins -->
@@ -288,10 +298,13 @@
                          this.stopAutoplay();
                          this.autoplayTimer = setInterval(() => {
                              this.next();
-                         }, 6500);
+                         }, 5000);
                      },
                      stopAutoplay() {
-                         if (this.autoplayTimer) clearInterval(this.autoplayTimer);
+                         if (this.autoplayTimer) {
+                             clearInterval(this.autoplayTimer);
+                             this.autoplayTimer = null;
+                         }
                      },
                      next() {
                          this.goTo((this.activeSlide + 1) % this.totalSlides);
@@ -301,6 +314,7 @@
                      },
                      goTo(index) {
                          this.activeSlide = index;
+                         this.startAutoplay();
                          this.$nextTick(() => {
                              if (window.lucide) window.lucide.createIcons();
                          });
@@ -314,9 +328,16 @@
                          if (this.touchEndX - this.touchStartX > 50) this.prev();
                      }
                  }"
-                 x-init="startAutoplay()"
-                 @mouseenter="stopAutoplay()"
-                 @mouseleave="startAutoplay()"
+                 x-init="
+                     startAutoplay();
+                     document.addEventListener('visibilitychange', () => {
+                         if (document.hidden) {
+                             stopAutoplay();
+                         } else {
+                             startAutoplay();
+                         }
+                     });
+                 "
                  @touchstart="handleTouchStart($event)"
                  @touchend="handleTouchEnd($event)"
                  @keydown.right="next()"
@@ -565,13 +586,15 @@
 
                     <!-- Slide Prev / Next & Indicators -->
                     <div class="flex items-center justify-between w-full sm:w-auto gap-3 self-end sm:self-auto">
-                        <!-- Dots -->
+                        <!-- Dots & Auto-Advance Progress -->
                         <div class="flex items-center gap-1.5">
                             <template x-for="i in totalSlides" :key="i">
                                 <button @click="goTo(i - 1)" 
-                                        :class="activeSlide === (i - 1) ? 'w-7 bg-[#f2b301]' : 'w-2 bg-white/30 hover:bg-white/60'"
-                                        class="h-2 rounded-full transition-all duration-300 cursor-pointer"
+                                        :class="activeSlide === (i - 1) ? 'w-9 bg-white/20' : 'w-2.5 bg-white/30 hover:bg-white/60'"
+                                        class="relative h-2 rounded-full overflow-hidden transition-all duration-300 cursor-pointer"
                                         :aria-label="'Go to slide ' + i">
+                                    <span x-show="activeSlide === (i - 1)" 
+                                          class="absolute inset-0 bg-[#f2b301] hero-progress-fill rounded-full"></span>
                                 </button>
                             </template>
                             <span class="text-xs font-mono text-sand/70 pl-1.5" x-text="'0' + (activeSlide + 1) + ' / 0' + totalSlides"></span>
@@ -694,8 +717,8 @@
             <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
                 <!-- Left Image/Decoration -->
                 <div class="lg:col-span-5 space-y-6 scroll-fade-up" :class="{ 'visible': shown }">
-                    <div class="relative rounded-card overflow-hidden shadow-xl aspect-[3/4] bg-slate-100">
-                        <img src="doctor_about.jpg" alt="Orthopaedic surgeon Dr. Chandrashekar P at IKOC, Bengaluru" class="w-full h-full object-cover">
+                    <div class="relative rounded-card overflow-hidden shadow-xl aspect-[4/3] bg-slate-100">
+                        <img src="doctor_about.jpg" alt="Orthopaedic surgeon Dr. Chandrashekar P, Founder of IKOC" class="w-full h-full object-cover object-[center_10%]">
                     </div>
                     <div class="border-l-4 border-teal pl-4 italic text-navy/85 font-heading text-lg md:text-xl leading-relaxed py-2">
                         “Advanced technology matters, but so does treating every patient like family.”
@@ -1807,12 +1830,37 @@
                                 activeImg: 'assets/fellowship/fellowship_2.jpg',
                                 activeCaption: 'Dr. Chandrashekar P with surgical fellows beside the robotic arm in theatre',
                                 activeBadge: 'Robotic Suite · Sakra World Hospital',
-                                setPhoto(img, caption, badge) {
+                                currentIndex: 0,
+                                autoTimer: null,
+                                photos: [
+                                    { img: 'assets/fellowship/fellowship_2.jpg', caption: 'Dr. Chandrashekar P with surgical fellows beside the robotic arm in theatre', badge: 'Robotic Suite · Sakra World Hospital' },
+                                    { img: 'assets/fellowship/fellowship_6.jpg', caption: 'Dr. Chandrashekar P mentoring international orthopaedic surgeons in OT 6', badge: 'OT 6 · International Fellows' },
+                                    { img: 'assets/fellowship/fellowship_3.jpg', caption: 'CUVIS Robotic Surgery certification ceremony with fellowship doctors', badge: 'CUVIS Robotics Certification' },
+                                    { img: 'assets/fellowship/fellowship_9.jpg', caption: 'International fellowship delegation in surgical scrubs at the surgical wing', badge: 'Global Surgical Delegation' },
+                                    { img: 'assets/fellowship/fellowship_1.jpg', caption: 'Surgical milestone celebration & certificate presentation with international trainees', badge: 'Milestone Appreciation' },
+                                    { img: 'assets/fellowship/fellowship_8.jpg', caption: 'Visiting international orthopaedic surgeons attending surgical masterclass', badge: 'European & Global Fellows' }
+                                ],
+                                startAuto() {
+                                    this.stopAuto();
+                                    this.autoTimer = setInterval(() => {
+                                        this.currentIndex = (this.currentIndex + 1) % this.photos.length;
+                                        const p = this.photos[this.currentIndex];
+                                        this.activeImg = p.img;
+                                        this.activeCaption = p.caption;
+                                        this.activeBadge = p.badge;
+                                    }, 4000);
+                                },
+                                stopAuto() {
+                                    if (this.autoTimer) clearInterval(this.autoTimer);
+                                },
+                                setPhoto(img, caption, badge, idx) {
                                     this.activeImg = img;
                                     this.activeCaption = caption;
                                     this.activeBadge = badge;
+                                    if (typeof idx === 'number') this.currentIndex = idx;
+                                    this.startAuto();
                                 }
-                            }">
+                            }" x-init="startAuto()">
                                 <!-- Main Active Fellowship Photo -->
                                 <div class="relative rounded-[20px] overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-slate-900 group">
                                     <img :src="activeImg" :alt="activeCaption" class="w-full h-full object-cover object-center transition-all duration-300">
@@ -1829,25 +1877,25 @@
                                 <div class="space-y-1.5">
                                     <div class="flex items-center justify-between text-[11px] text-muted font-medium px-1">
                                         <span>Fellowship Students & Trainees:</span>
-                                        <span class="text-teal font-semibold">Click to view (6 photos)</span>
+                                        <span class="text-teal font-semibold">Auto-advancing (6 photos)</span>
                                     </div>
                                     <div class="grid grid-cols-6 gap-2">
-                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_2.jpg', 'Dr. Chandrashekar P with surgical fellows beside the robotic arm in theatre', 'Robotic OT Suite')" :class="activeImg === 'assets/fellowship/fellowship_2.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
+                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_2.jpg', 'Dr. Chandrashekar P with surgical fellows beside the robotic arm in theatre', 'Robotic OT Suite', 0)" :class="activeImg === 'assets/fellowship/fellowship_2.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
                                             <img src="assets/fellowship/fellowship_2.jpg" alt="Fellows with robotic arm" class="w-full h-full object-cover">
                                         </button>
-                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_6.jpg', 'Dr. Chandrashekar P mentoring international orthopaedic surgeons in OT 6', 'OT 6 · International Fellows')" :class="activeImg === 'assets/fellowship/fellowship_6.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
+                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_6.jpg', 'Dr. Chandrashekar P mentoring international orthopaedic surgeons in OT 6', 'OT 6 · International Fellows', 1)" :class="activeImg === 'assets/fellowship/fellowship_6.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
                                             <img src="assets/fellowship/fellowship_6.jpg" alt="Mentoring fellows in OT" class="w-full h-full object-cover">
                                         </button>
-                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_3.jpg', 'CUVIS Robotic Surgery certification ceremony with fellowship doctors', 'CUVIS Robotics Certification')" :class="activeImg === 'assets/fellowship/fellowship_3.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
+                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_3.jpg', 'CUVIS Robotic Surgery certification ceremony with fellowship doctors', 'CUVIS Robotics Certification', 2)" :class="activeImg === 'assets/fellowship/fellowship_3.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
                                             <img src="assets/fellowship/fellowship_3.jpg" alt="Fellows certification" class="w-full h-full object-cover">
                                         </button>
-                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_9.jpg', 'International fellowship delegation in surgical scrubs at the surgical wing', 'Global Surgical Delegation')" :class="activeImg === 'assets/fellowship/fellowship_9.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
+                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_9.jpg', 'International fellowship delegation in surgical scrubs at the surgical wing', 'Global Surgical Delegation', 3)" :class="activeImg === 'assets/fellowship/fellowship_9.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
                                             <img src="assets/fellowship/fellowship_9.jpg" alt="Visiting fellowship surgeons" class="w-full h-full object-cover">
                                         </button>
-                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_1.jpg', 'Surgical milestone celebration & certificate presentation with international trainees', 'Milestone Appreciation')" :class="activeImg === 'assets/fellowship/fellowship_1.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
+                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_1.jpg', 'Surgical milestone celebration & certificate presentation with international trainees', 'Milestone Appreciation', 4)" :class="activeImg === 'assets/fellowship/fellowship_1.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
                                             <img src="assets/fellowship/fellowship_1.jpg" alt="Award presentation with fellows" class="w-full h-full object-cover">
                                         </button>
-                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_8.jpg', 'Visiting international orthopaedic surgeons attending surgical masterclass', 'European & Global Fellows')" :class="activeImg === 'assets/fellowship/fellowship_8.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
+                                        <button type="button" @click="setPhoto('assets/fellowship/fellowship_8.jpg', 'Visiting international orthopaedic surgeons attending surgical masterclass', 'European & Global Fellows', 5)" :class="activeImg === 'assets/fellowship/fellowship_8.jpg' ? 'ring-2 ring-teal ring-offset-1' : 'opacity-70 hover:opacity-100'" class="aspect-square rounded-lg overflow-hidden border border-line bg-slate-100 transition-all cursor-pointer">
                                             <img src="assets/fellowship/fellowship_8.jpg" alt="International fellows" class="w-full h-full object-cover">
                                         </button>
                                     </div>
